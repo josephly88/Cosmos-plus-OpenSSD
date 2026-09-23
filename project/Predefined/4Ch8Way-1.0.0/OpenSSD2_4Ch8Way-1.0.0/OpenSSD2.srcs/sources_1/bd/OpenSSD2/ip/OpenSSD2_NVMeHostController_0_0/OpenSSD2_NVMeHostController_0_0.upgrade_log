@@ -1,0 +1,82 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Wed Sep 23 21:09:25 2026
+| Host         : PC89136 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'OpenSSD2_NVMeHostController_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of OpenSSD2_NVMeHostController_0_0 (ENCLab:ip:NVMeHostController:2.0.0) from (Rev. 1) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading IP 'OpenSSD2_NVMeHostController_0_0'.
+
+
+-upgrade has added interface 'm1_axi'
+-upgrade has added interface 'm1_axi_signal_clock'
+-upgrade has added interface 'm1_axi_signal_reset'
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'OpenSSD2_NVMeHostController_0_0'. These changes may impact your design.
+
+
+-upgrade has added port 'm1_axi_aclk'
+-upgrade has added port 'm1_axi_araddr'
+-upgrade has added port 'm1_axi_arburst'
+-upgrade has added port 'm1_axi_arcache'
+-upgrade has added port 'm1_axi_aresetn'
+-upgrade has added port 'm1_axi_arid'
+-upgrade has added port 'm1_axi_arlen'
+-upgrade has added port 'm1_axi_arlock'
+-upgrade has added port 'm1_axi_arprot'
+-upgrade has added port 'm1_axi_arqos'
+-upgrade has added port 'm1_axi_arready'
+-upgrade has added port 'm1_axi_arregion'
+-upgrade has added port 'm1_axi_arsize'
+-upgrade has added port 'm1_axi_aruser'
+-upgrade has added port 'm1_axi_arvalid'
+-upgrade has added port 'm1_axi_awaddr'
+-upgrade has added port 'm1_axi_awburst'
+-upgrade has added port 'm1_axi_awcache'
+-upgrade has added port 'm1_axi_awid'
+-upgrade has added port 'm1_axi_awlen'
+-upgrade has added port 'm1_axi_awlock'
+-upgrade has added port 'm1_axi_awprot'
+-upgrade has added port 'm1_axi_awqos'
+-upgrade has added port 'm1_axi_awready'
+-upgrade has added port 'm1_axi_awregion'
+-upgrade has added port 'm1_axi_awsize'
+-upgrade has added port 'm1_axi_awuser'
+-upgrade has added port 'm1_axi_awvalid'
+-upgrade has added port 'm1_axi_bid'
+-upgrade has added port 'm1_axi_bready'
+-upgrade has added port 'm1_axi_bresp'
+-upgrade has added port 'm1_axi_buser'
+-upgrade has added port 'm1_axi_bvalid'
+-upgrade has added port 'm1_axi_rdata'
+-upgrade has added port 'm1_axi_rid'
+-upgrade has added port 'm1_axi_rlast'
+-upgrade has added port 'm1_axi_rready'
+-upgrade has added port 'm1_axi_rresp'
+-upgrade has added port 'm1_axi_ruser'
+-upgrade has added port 'm1_axi_rvalid'
+-upgrade has added port 'm1_axi_wdata'
+-upgrade has added port 'm1_axi_wid'
+-upgrade has added port 'm1_axi_wlast'
+-upgrade has added port 'm1_axi_wready'
+-upgrade has added port 'm1_axi_wstrb'
+-upgrade has added port 'm1_axi_wuser'
+-upgrade has added port 'm1_axi_wvalid'
+

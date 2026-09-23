@@ -84,7 +84,7 @@ module pcie_7x_0_core_top_core_top # (
   parameter [31:0]  BAR0 = 32'hFFFFE000,
   parameter [31:0]  BAR1 = 32'h00000000,
   parameter [31:0]  BAR2 = 32'h00000000,
-  parameter [31:0]  BAR3 = 32'h00000000,
+  parameter [31:0]  BAR3 = 32'hE0000000,
   parameter [31:0]  BAR4 = 32'h00000000,
   parameter [31:0]  BAR5 = 32'h00000000,
 

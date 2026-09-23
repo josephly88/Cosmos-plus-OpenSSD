@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Nov 10 02:35:29 2017" VIVADOVERSION="2014.4.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Sep 23 21:45:33 2026" VIVADOVERSION="2014.4">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z045" NAME="OpenSSD2_imp" PACKAGE="ffg900" SPEEDGRADE="-3"/>
 
@@ -169,6 +169,116 @@
     <PORT DIR="O" LEFT="7" NAME="pcie_tx_n" RIGHT="0" SIGIS="undef" SIGNAME="NVMeHostController_0_pcie_tx_n">
       <CONNECTIONS>
         <CONNECTION INSTANCE="NVMeHostController_0" PORT="pcie_tx_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O_NAND_CH2_RE_N" SIGIS="undef" SIGNAME="V2NFC100DDR_2_O_NAND_RE_N">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="O_NAND_RE_N"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="IO_NAND_CH2_DQS_N" SIGIS="undef" SIGNAME="V2NFC100DDR_2_IO_NAND_DQS_N">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="IO_NAND_DQS_N"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O_NAND_CH2_WE" SIGIS="undef" SIGNAME="V2NFC100DDR_2_O_NAND_WE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="O_NAND_WE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" LEFT="7" NAME="IO_NAND_CH2_DQ" RIGHT="0" SIGIS="undef" SIGNAME="V2NFC100DDR_2_IO_NAND_DQ">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="IO_NAND_DQ"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="IO_NAND_CH2_DQS_P" SIGIS="undef" SIGNAME="V2NFC100DDR_2_IO_NAND_DQS_P">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="IO_NAND_DQS_P"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="O_NAND_CH2_CE" RIGHT="0" SIGIS="undef" SIGNAME="V2NFC100DDR_2_O_NAND_CE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="O_NAND_CE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="I_NAND_CH2_RB" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_I_NAND_CH2_RB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="I_NAND_RB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O_NAND_CH2_ALE" SIGIS="undef" SIGNAME="V2NFC100DDR_2_O_NAND_ALE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="O_NAND_ALE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O_NAND_CH2_CLE" SIGIS="undef" SIGNAME="V2NFC100DDR_2_O_NAND_CLE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="O_NAND_CLE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O_NAND_CH2_RE_P" SIGIS="undef" SIGNAME="V2NFC100DDR_2_O_NAND_RE_P">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="O_NAND_RE_P"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O_NAND_CH2_WP" SIGIS="undef" SIGNAME="V2NFC100DDR_2_O_NAND_WP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="O_NAND_WP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O_NAND_CH3_WE" SIGIS="undef" SIGNAME="V2NFC100DDR_3_O_NAND_WE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="O_NAND_WE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="O_NAND_CH3_CE" RIGHT="0" SIGIS="undef" SIGNAME="V2NFC100DDR_3_O_NAND_CE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="O_NAND_CE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="IO_NAND_CH3_DQS_P" SIGIS="undef" SIGNAME="V2NFC100DDR_3_IO_NAND_DQS_P">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="IO_NAND_DQS_P"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" LEFT="7" NAME="IO_NAND_CH3_DQ" RIGHT="0" SIGIS="undef" SIGNAME="V2NFC100DDR_3_IO_NAND_DQ">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="IO_NAND_DQ"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O_NAND_CH3_WP" SIGIS="undef" SIGNAME="V2NFC100DDR_3_O_NAND_WP">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="O_NAND_WP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O_NAND_CH3_ALE" SIGIS="undef" SIGNAME="V2NFC100DDR_3_O_NAND_ALE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="O_NAND_ALE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O_NAND_CH3_CLE" SIGIS="undef" SIGNAME="V2NFC100DDR_3_O_NAND_CLE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="O_NAND_CLE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O_NAND_CH3_RE_P" SIGIS="undef" SIGNAME="V2NFC100DDR_3_O_NAND_RE_P">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="O_NAND_RE_P"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="IO" NAME="IO_NAND_CH3_DQS_N" SIGIS="undef" SIGNAME="V2NFC100DDR_3_IO_NAND_DQS_N">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="IO_NAND_DQS_N"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="O_NAND_CH3_RE_N" SIGIS="undef" SIGNAME="V2NFC100DDR_3_O_NAND_RE_N">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="O_NAND_RE_N"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="I_NAND_CH3_RB" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_I_NAND_CH3_RB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="I_NAND_RB"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -653,6 +763,10 @@
             <CONNECTION INSTANCE="V2NFC100DDR_0" PORT="iOutputDrivingClock"/>
             <CONNECTION INSTANCE="V2NFC100DDR_1" PORT="iDelayRefClock"/>
             <CONNECTION INSTANCE="V2NFC100DDR_1" PORT="iOutputDrivingClock"/>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="iOutputDrivingClock"/>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="iDelayRefClock"/>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="iOutputDrivingClock"/>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="iDelayRefClock"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_reset">
@@ -683,12 +797,12 @@
         <PARAMETER NAME="C_BYTE_SIZE" VALUE="9"/>
         <PARAMETER NAME="C_ALGORITHM" VALUE="1"/>
         <PARAMETER NAME="C_PRIM_TYPE" VALUE="1"/>
-        <PARAMETER NAME="C_LOAD_INIT_FILE" VALUE="1"/>
-        <PARAMETER NAME="C_INIT_FILE_NAME" VALUE="OpenSSD2_blk_mem_gen_0_0.mif"/>
+        <PARAMETER NAME="C_LOAD_INIT_FILE" VALUE="0"/>
+        <PARAMETER NAME="C_INIT_FILE_NAME" VALUE="no_coe_file_loaded"/>
         <PARAMETER NAME="C_INIT_FILE" VALUE="NONE"/>
         <PARAMETER NAME="C_USE_DEFAULT_DATA" VALUE="0"/>
         <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
-        <PARAMETER NAME="C_HAS_RSTA" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_RSTA" VALUE="0"/>
         <PARAMETER NAME="C_RST_PRIORITY_A" VALUE="CE"/>
         <PARAMETER NAME="C_RSTRAM_A" VALUE="0"/>
         <PARAMETER NAME="C_INITA_VAL" VALUE="0"/>
@@ -699,9 +813,9 @@
         <PARAMETER NAME="C_WRITE_MODE_A" VALUE="WRITE_FIRST"/>
         <PARAMETER NAME="C_WRITE_WIDTH_A" VALUE="64"/>
         <PARAMETER NAME="C_READ_WIDTH_A" VALUE="64"/>
-        <PARAMETER NAME="C_WRITE_DEPTH_A" VALUE="256"/>
-        <PARAMETER NAME="C_READ_DEPTH_A" VALUE="256"/>
-        <PARAMETER NAME="C_ADDRA_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_A" VALUE="8192"/>
+        <PARAMETER NAME="C_READ_DEPTH_A" VALUE="8192"/>
+        <PARAMETER NAME="C_ADDRA_WIDTH" VALUE="13"/>
         <PARAMETER NAME="C_HAS_RSTB" VALUE="0"/>
         <PARAMETER NAME="C_RST_PRIORITY_B" VALUE="CE"/>
         <PARAMETER NAME="C_RSTRAM_B" VALUE="0"/>
@@ -713,9 +827,9 @@
         <PARAMETER NAME="C_WRITE_MODE_B" VALUE="WRITE_FIRST"/>
         <PARAMETER NAME="C_WRITE_WIDTH_B" VALUE="64"/>
         <PARAMETER NAME="C_READ_WIDTH_B" VALUE="64"/>
-        <PARAMETER NAME="C_WRITE_DEPTH_B" VALUE="256"/>
-        <PARAMETER NAME="C_READ_DEPTH_B" VALUE="256"/>
-        <PARAMETER NAME="C_ADDRB_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_B" VALUE="8192"/>
+        <PARAMETER NAME="C_READ_DEPTH_B" VALUE="8192"/>
+        <PARAMETER NAME="C_ADDRB_WIDTH" VALUE="13"/>
         <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="1"/>
         <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="0"/>
         <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_A" VALUE="0"/>
@@ -732,9 +846,9 @@
         <PARAMETER NAME="C_DISABLE_WARN_BHV_COLL" VALUE="0"/>
         <PARAMETER NAME="C_EN_SLEEP_PIN" VALUE="0"/>
         <PARAMETER NAME="C_DISABLE_WARN_BHV_RANGE" VALUE="0"/>
-        <PARAMETER NAME="C_COUNT_36K_BRAM" VALUE="1"/>
-        <PARAMETER NAME="C_COUNT_18K_BRAM" VALUE="0"/>
-        <PARAMETER NAME="C_EST_POWER_SUMMARY" VALUE="Estimated Power for IP     :     6.700549 mW"/>
+        <PARAMETER NAME="C_COUNT_36K_BRAM" VALUE="14"/>
+        <PARAMETER NAME="C_COUNT_18K_BRAM" VALUE="1"/>
+        <PARAMETER NAME="C_EST_POWER_SUMMARY" VALUE="Estimated Power for IP     :     19.179098 mW"/>
         <PARAMETER NAME="Component_Name" VALUE="OpenSSD2_blk_mem_gen_0_0"/>
         <PARAMETER NAME="Interface_Type" VALUE="Native"/>
         <PARAMETER NAME="AXI_Type" VALUE="AXI4_Full"/>
@@ -756,7 +870,7 @@
         <PARAMETER NAME="Primitive" VALUE="8kx2"/>
         <PARAMETER NAME="Assume_Synchronous_Clk" VALUE="false"/>
         <PARAMETER NAME="Write_Width_A" VALUE="64"/>
-        <PARAMETER NAME="Write_Depth_A" VALUE="256"/>
+        <PARAMETER NAME="Write_Depth_A" VALUE="8192"/>
         <PARAMETER NAME="Read_Width_A" VALUE="64"/>
         <PARAMETER NAME="Operating_Mode_A" VALUE="WRITE_FIRST"/>
         <PARAMETER NAME="Enable_A" VALUE="Use_ENA_Pin"/>
@@ -773,11 +887,11 @@
         <PARAMETER NAME="register_porta_input_of_softecc" VALUE="false"/>
         <PARAMETER NAME="register_portb_output_of_softecc" VALUE="false"/>
         <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
-        <PARAMETER NAME="Load_Init_File" VALUE="true"/>
-        <PARAMETER NAME="Coe_File" VALUE="../../../../uProgROM_v2.0.coe"/>
+        <PARAMETER NAME="Load_Init_File" VALUE="false"/>
+        <PARAMETER NAME="Coe_File" VALUE="no_coe_file_loaded"/>
         <PARAMETER NAME="Fill_Remaining_Memory_Locations" VALUE="false"/>
         <PARAMETER NAME="Remaining_Memory_Locations" VALUE="0"/>
-        <PARAMETER NAME="Use_RSTA_Pin" VALUE="true"/>
+        <PARAMETER NAME="Use_RSTA_Pin" VALUE="false"/>
         <PARAMETER NAME="Reset_Memory_Latch_A" VALUE="false"/>
         <PARAMETER NAME="Reset_Priority_A" VALUE="CE"/>
         <PARAMETER NAME="Output_Reset_Value_A" VALUE="0"/>
@@ -807,11 +921,6 @@
             <CONNECTION INSTANCE="Tiger4NSC_0" PORT="oROMClock"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="rsta" SIGIS="undef" SIGNAME="Dispatcher_uCode_0_rsta">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Tiger4NSC_0" PORT="oROMReset"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" NAME="ena" SIGIS="undef" SIGNAME="Dispatcher_uCode_0_ena">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Tiger4NSC_0" PORT="oROMEnable"/>
@@ -822,7 +931,7 @@
             <CONNECTION INSTANCE="Tiger4NSC_0" PORT="oROMRW"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="7" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_0_addra">
+        <PORT DIR="I" LEFT="12" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_0_addra">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Tiger4NSC_0" PORT="oROMAddr"/>
           </CONNECTIONS>
@@ -846,7 +955,6 @@
             <PORTMAP PHYSICAL="dina"/>
             <PORTMAP PHYSICAL="douta"/>
             <PORTMAP PHYSICAL="ena"/>
-            <PORTMAP PHYSICAL="rsta"/>
             <PORTMAP PHYSICAL="wea"/>
           </PORTMAPS>
         </BUSINTERFACE>
@@ -1041,13 +1149,391 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
+    <MODULE FULLNAME="/Dispatcher_uCode_2" HWVERSION="8.2" INSTANCE="Dispatcher_uCode_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="MEMORY" MODTYPE="blk_mem_gen" VLNV="xilinx.com:ip:blk_mem_gen:8.2">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=blk_mem_gen;v=v8_2;d=pg058-blk-mem-gen.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
+        <PARAMETER NAME="C_INTERFACE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_AXI_SLAVE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BRAM_BLOCK" VALUE="0"/>
+        <PARAMETER NAME="C_ENABLE_32BIT_ADDRESS" VALUE="0"/>
+        <PARAMETER NAME="C_CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="C_HAS_AXI_ID" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_ID_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_MEM_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_BYTE_SIZE" VALUE="9"/>
+        <PARAMETER NAME="C_ALGORITHM" VALUE="1"/>
+        <PARAMETER NAME="C_PRIM_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_LOAD_INIT_FILE" VALUE="1"/>
+        <PARAMETER NAME="C_INIT_FILE_NAME" VALUE="OpenSSD2_Dispatcher_uCode_1_0.mif"/>
+        <PARAMETER NAME="C_INIT_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="C_USE_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_RSTA" VALUE="1"/>
+        <PARAMETER NAME="C_RST_PRIORITY_A" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_A" VALUE="0"/>
+        <PARAMETER NAME="C_INITA_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENA" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_REGCEA" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEA" VALUE="0"/>
+        <PARAMETER NAME="C_WEA_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_WRITE_MODE_A" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_A" VALUE="64"/>
+        <PARAMETER NAME="C_READ_WIDTH_A" VALUE="64"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_A" VALUE="256"/>
+        <PARAMETER NAME="C_READ_DEPTH_A" VALUE="256"/>
+        <PARAMETER NAME="C_ADDRA_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_HAS_RSTB" VALUE="0"/>
+        <PARAMETER NAME="C_RST_PRIORITY_B" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_B" VALUE="0"/>
+        <PARAMETER NAME="C_INITB_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENB" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_REGCEB" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEB" VALUE="0"/>
+        <PARAMETER NAME="C_WEB_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_WRITE_MODE_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_B" VALUE="64"/>
+        <PARAMETER NAME="C_READ_WIDTH_B" VALUE="64"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_B" VALUE="256"/>
+        <PARAMETER NAME="C_READ_DEPTH_B" VALUE="256"/>
+        <PARAMETER NAME="C_ADDRB_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_MUX_PIPELINE_STAGES" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_INPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_USE_SOFTECC" VALUE="0"/>
+        <PARAMETER NAME="C_USE_ECC" VALUE="0"/>
+        <PARAMETER NAME="C_EN_ECC_PIPE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_INJECTERR" VALUE="0"/>
+        <PARAMETER NAME="C_SIM_COLLISION_CHECK" VALUE="ALL"/>
+        <PARAMETER NAME="C_COMMON_CLK" VALUE="0"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_COLL" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SLEEP_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_RANGE" VALUE="0"/>
+        <PARAMETER NAME="C_COUNT_36K_BRAM" VALUE="1"/>
+        <PARAMETER NAME="C_COUNT_18K_BRAM" VALUE="0"/>
+        <PARAMETER NAME="C_EST_POWER_SUMMARY" VALUE="Estimated Power for IP     :     6.700549 mW"/>
+        <PARAMETER NAME="Component_Name" VALUE="OpenSSD2_Dispatcher_uCode_1_0"/>
+        <PARAMETER NAME="Interface_Type" VALUE="Native"/>
+        <PARAMETER NAME="AXI_Type" VALUE="AXI4_Full"/>
+        <PARAMETER NAME="AXI_Slave_Type" VALUE="Memory_Slave"/>
+        <PARAMETER NAME="Use_AXI_ID" VALUE="false"/>
+        <PARAMETER NAME="AXI_ID_Width" VALUE="4"/>
+        <PARAMETER NAME="Memory_Type" VALUE="Single_Port_RAM"/>
+        <PARAMETER NAME="Enable_32bit_Address" VALUE="false"/>
+        <PARAMETER NAME="ecctype" VALUE="No_ECC"/>
+        <PARAMETER NAME="ECC" VALUE="false"/>
+        <PARAMETER NAME="softecc" VALUE="false"/>
+        <PARAMETER NAME="EN_SLEEP_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_ECC_PIPE" VALUE="false"/>
+        <PARAMETER NAME="Use_Error_Injection_Pins" VALUE="false"/>
+        <PARAMETER NAME="Error_Injection_Type" VALUE="Single_Bit_Error_Injection"/>
+        <PARAMETER NAME="Use_Byte_Write_Enable" VALUE="false"/>
+        <PARAMETER NAME="Byte_Size" VALUE="9"/>
+        <PARAMETER NAME="Algorithm" VALUE="Minimum_Area"/>
+        <PARAMETER NAME="Primitive" VALUE="8kx2"/>
+        <PARAMETER NAME="Assume_Synchronous_Clk" VALUE="false"/>
+        <PARAMETER NAME="Write_Width_A" VALUE="64"/>
+        <PARAMETER NAME="Write_Depth_A" VALUE="256"/>
+        <PARAMETER NAME="Read_Width_A" VALUE="64"/>
+        <PARAMETER NAME="Operating_Mode_A" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_A" VALUE="Use_ENA_Pin"/>
+        <PARAMETER NAME="Write_Width_B" VALUE="64"/>
+        <PARAMETER NAME="Read_Width_B" VALUE="64"/>
+        <PARAMETER NAME="Operating_Mode_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_B" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Primitives" VALUE="true"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEA_Pin" VALUE="false"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Primitives" VALUE="false"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEB_Pin" VALUE="false"/>
+        <PARAMETER NAME="register_porta_input_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="register_portb_output_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
+        <PARAMETER NAME="Load_Init_File" VALUE="true"/>
+        <PARAMETER NAME="Coe_File" VALUE="../../../../uProgROM_v2.0.coe"/>
+        <PARAMETER NAME="Fill_Remaining_Memory_Locations" VALUE="false"/>
+        <PARAMETER NAME="Remaining_Memory_Locations" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTA_Pin" VALUE="true"/>
+        <PARAMETER NAME="Reset_Memory_Latch_A" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_A" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_A" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTB_Pin" VALUE="false"/>
+        <PARAMETER NAME="Reset_Memory_Latch_B" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_B" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_B" VALUE="0"/>
+        <PARAMETER NAME="Reset_Type" VALUE="SYNC"/>
+        <PARAMETER NAME="Additional_Inputs_for_Power_Estimation" VALUE="false"/>
+        <PARAMETER NAME="Port_A_Clock" VALUE="100"/>
+        <PARAMETER NAME="Port_A_Write_Rate" VALUE="50"/>
+        <PARAMETER NAME="Port_B_Clock" VALUE="0"/>
+        <PARAMETER NAME="Port_B_Write_Rate" VALUE="0"/>
+        <PARAMETER NAME="Port_A_Enable_Rate" VALUE="100"/>
+        <PARAMETER NAME="Port_B_Enable_Rate" VALUE="0"/>
+        <PARAMETER NAME="Collision_Warnings" VALUE="ALL"/>
+        <PARAMETER NAME="Disable_Collision_Warnings" VALUE="false"/>
+        <PARAMETER NAME="Disable_Out_of_Range_Warnings" VALUE="false"/>
+        <PARAMETER NAME="use_bram_block" VALUE="Stand_Alone"/>
+        <PARAMETER NAME="MEM_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clka" SIGIS="undef" SIGNAME="Dispatcher_uCode_2_clka">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oROMClock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rsta" SIGIS="undef" SIGNAME="Dispatcher_uCode_2_rsta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oROMReset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ena" SIGIS="undef" SIGNAME="Dispatcher_uCode_2_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oROMEnable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_2_wea">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oROMRW"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_2_addra">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oROMAddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_2_dina">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oROMWData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_2_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iROMRData"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="Tiger4NSC_2_uROMInterface" NAME="BRAM_PORTA" TYPE="TARGET">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="addra"/>
+            <PORTMAP PHYSICAL="clka"/>
+            <PORTMAP PHYSICAL="dina"/>
+            <PORTMAP PHYSICAL="douta"/>
+            <PORTMAP PHYSICAL="ena"/>
+            <PORTMAP PHYSICAL="rsta"/>
+            <PORTMAP PHYSICAL="wea"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/Dispatcher_uCode_3" HWVERSION="8.2" INSTANCE="Dispatcher_uCode_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="MEMORY" MODTYPE="blk_mem_gen" VLNV="xilinx.com:ip:blk_mem_gen:8.2">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=blk_mem_gen;v=v8_2;d=pg058-blk-mem-gen.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
+        <PARAMETER NAME="C_INTERFACE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_AXI_SLAVE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BRAM_BLOCK" VALUE="0"/>
+        <PARAMETER NAME="C_ENABLE_32BIT_ADDRESS" VALUE="0"/>
+        <PARAMETER NAME="C_CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="C_HAS_AXI_ID" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_ID_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_MEM_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_BYTE_SIZE" VALUE="9"/>
+        <PARAMETER NAME="C_ALGORITHM" VALUE="1"/>
+        <PARAMETER NAME="C_PRIM_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_LOAD_INIT_FILE" VALUE="1"/>
+        <PARAMETER NAME="C_INIT_FILE_NAME" VALUE="OpenSSD2_Dispatcher_uCode_1_1.mif"/>
+        <PARAMETER NAME="C_INIT_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="C_USE_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_RSTA" VALUE="1"/>
+        <PARAMETER NAME="C_RST_PRIORITY_A" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_A" VALUE="0"/>
+        <PARAMETER NAME="C_INITA_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENA" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_REGCEA" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEA" VALUE="0"/>
+        <PARAMETER NAME="C_WEA_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_WRITE_MODE_A" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_A" VALUE="64"/>
+        <PARAMETER NAME="C_READ_WIDTH_A" VALUE="64"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_A" VALUE="256"/>
+        <PARAMETER NAME="C_READ_DEPTH_A" VALUE="256"/>
+        <PARAMETER NAME="C_ADDRA_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_HAS_RSTB" VALUE="0"/>
+        <PARAMETER NAME="C_RST_PRIORITY_B" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_B" VALUE="0"/>
+        <PARAMETER NAME="C_INITB_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENB" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_REGCEB" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEB" VALUE="0"/>
+        <PARAMETER NAME="C_WEB_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_WRITE_MODE_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_B" VALUE="64"/>
+        <PARAMETER NAME="C_READ_WIDTH_B" VALUE="64"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_B" VALUE="256"/>
+        <PARAMETER NAME="C_READ_DEPTH_B" VALUE="256"/>
+        <PARAMETER NAME="C_ADDRB_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="1"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_MUX_PIPELINE_STAGES" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_INPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_USE_SOFTECC" VALUE="0"/>
+        <PARAMETER NAME="C_USE_ECC" VALUE="0"/>
+        <PARAMETER NAME="C_EN_ECC_PIPE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_INJECTERR" VALUE="0"/>
+        <PARAMETER NAME="C_SIM_COLLISION_CHECK" VALUE="ALL"/>
+        <PARAMETER NAME="C_COMMON_CLK" VALUE="0"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_COLL" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SLEEP_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_RANGE" VALUE="0"/>
+        <PARAMETER NAME="C_COUNT_36K_BRAM" VALUE="1"/>
+        <PARAMETER NAME="C_COUNT_18K_BRAM" VALUE="0"/>
+        <PARAMETER NAME="C_EST_POWER_SUMMARY" VALUE="Estimated Power for IP     :     6.700549 mW"/>
+        <PARAMETER NAME="Component_Name" VALUE="OpenSSD2_Dispatcher_uCode_1_1"/>
+        <PARAMETER NAME="Interface_Type" VALUE="Native"/>
+        <PARAMETER NAME="AXI_Type" VALUE="AXI4_Full"/>
+        <PARAMETER NAME="AXI_Slave_Type" VALUE="Memory_Slave"/>
+        <PARAMETER NAME="Use_AXI_ID" VALUE="false"/>
+        <PARAMETER NAME="AXI_ID_Width" VALUE="4"/>
+        <PARAMETER NAME="Memory_Type" VALUE="Single_Port_RAM"/>
+        <PARAMETER NAME="Enable_32bit_Address" VALUE="false"/>
+        <PARAMETER NAME="ecctype" VALUE="No_ECC"/>
+        <PARAMETER NAME="ECC" VALUE="false"/>
+        <PARAMETER NAME="softecc" VALUE="false"/>
+        <PARAMETER NAME="EN_SLEEP_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_ECC_PIPE" VALUE="false"/>
+        <PARAMETER NAME="Use_Error_Injection_Pins" VALUE="false"/>
+        <PARAMETER NAME="Error_Injection_Type" VALUE="Single_Bit_Error_Injection"/>
+        <PARAMETER NAME="Use_Byte_Write_Enable" VALUE="false"/>
+        <PARAMETER NAME="Byte_Size" VALUE="9"/>
+        <PARAMETER NAME="Algorithm" VALUE="Minimum_Area"/>
+        <PARAMETER NAME="Primitive" VALUE="8kx2"/>
+        <PARAMETER NAME="Assume_Synchronous_Clk" VALUE="false"/>
+        <PARAMETER NAME="Write_Width_A" VALUE="64"/>
+        <PARAMETER NAME="Write_Depth_A" VALUE="256"/>
+        <PARAMETER NAME="Read_Width_A" VALUE="64"/>
+        <PARAMETER NAME="Operating_Mode_A" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_A" VALUE="Use_ENA_Pin"/>
+        <PARAMETER NAME="Write_Width_B" VALUE="64"/>
+        <PARAMETER NAME="Read_Width_B" VALUE="64"/>
+        <PARAMETER NAME="Operating_Mode_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_B" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Primitives" VALUE="true"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEA_Pin" VALUE="false"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Primitives" VALUE="false"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEB_Pin" VALUE="false"/>
+        <PARAMETER NAME="register_porta_input_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="register_portb_output_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
+        <PARAMETER NAME="Load_Init_File" VALUE="true"/>
+        <PARAMETER NAME="Coe_File" VALUE="../../../../uProgROM_v2.0.coe"/>
+        <PARAMETER NAME="Fill_Remaining_Memory_Locations" VALUE="false"/>
+        <PARAMETER NAME="Remaining_Memory_Locations" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTA_Pin" VALUE="true"/>
+        <PARAMETER NAME="Reset_Memory_Latch_A" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_A" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_A" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTB_Pin" VALUE="false"/>
+        <PARAMETER NAME="Reset_Memory_Latch_B" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_B" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_B" VALUE="0"/>
+        <PARAMETER NAME="Reset_Type" VALUE="SYNC"/>
+        <PARAMETER NAME="Additional_Inputs_for_Power_Estimation" VALUE="false"/>
+        <PARAMETER NAME="Port_A_Clock" VALUE="100"/>
+        <PARAMETER NAME="Port_A_Write_Rate" VALUE="50"/>
+        <PARAMETER NAME="Port_B_Clock" VALUE="0"/>
+        <PARAMETER NAME="Port_B_Write_Rate" VALUE="0"/>
+        <PARAMETER NAME="Port_A_Enable_Rate" VALUE="100"/>
+        <PARAMETER NAME="Port_B_Enable_Rate" VALUE="0"/>
+        <PARAMETER NAME="Collision_Warnings" VALUE="ALL"/>
+        <PARAMETER NAME="Disable_Collision_Warnings" VALUE="false"/>
+        <PARAMETER NAME="Disable_Out_of_Range_Warnings" VALUE="false"/>
+        <PARAMETER NAME="use_bram_block" VALUE="Stand_Alone"/>
+        <PARAMETER NAME="MEM_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clka" SIGIS="undef" SIGNAME="Dispatcher_uCode_3_clka">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oROMClock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rsta" SIGIS="undef" SIGNAME="Dispatcher_uCode_3_rsta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oROMReset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ena" SIGIS="undef" SIGNAME="Dispatcher_uCode_3_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oROMEnable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_3_wea">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oROMRW"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_3_addra">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oROMAddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_3_dina">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oROMWData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_3_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iROMRData"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="Tiger4NSC_3_uROMInterface" NAME="BRAM_PORTA" TYPE="TARGET">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="addra"/>
+            <PORTMAP PHYSICAL="clka"/>
+            <PORTMAP PHYSICAL="dina"/>
+            <PORTMAP PHYSICAL="douta"/>
+            <PORTMAP PHYSICAL="ena"/>
+            <PORTMAP PHYSICAL="rsta"/>
+            <PORTMAP PHYSICAL="wea"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
     <MODULE FULLNAME="/GPIC0" HWVERSION="2.1" INSTANCE="GPIC0" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axi_interconnect" VLNV="xilinx.com:ip:axi_interconnect:2.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_interconnect;v=v2_1;d=pg059-axi-interconnect.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
-        <PARAMETER NAME="NUM_SI" VALUE="1"/>
-        <PARAMETER NAME="NUM_MI" VALUE="2"/>
+        <PARAMETER NAME="NUM_SI" VALUE="2"/>
+        <PARAMETER NAME="NUM_MI" VALUE="4"/>
         <PARAMETER NAME="STRATEGY" VALUE="0"/>
         <PARAMETER NAME="ENABLE_ADVANCED_OPTIONS" VALUE="1"/>
         <PARAMETER NAME="ENABLE_PROTOCOL_CHECKERS" VALUE="0"/>
@@ -1768,6 +2254,446 @@
             <CONNECTION INSTANCE="Tiger4NSC_1" PORT="C_RREADY"/>
           </CONNECTIONS>
         </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="S01_ACLK" SIGIS="clk" SIGNAME="PS_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_clockc_0" PORT="FCLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S01_ARESETN" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S01_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S01_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S01_AXI_awvalid" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S01_AXI_awready" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="S01_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="S01_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S01_AXI_wvalid" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S01_AXI_wready" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S01_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S01_AXI_bvalid" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S01_AXI_bready" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S01_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S01_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S01_AXI_arvalid" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S01_AXI_arready" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="S01_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S01_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S01_AXI_rvalid" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S01_AXI_rready" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S01_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arburst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_arburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S01_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arcache">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_arcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S01_AXI_arid" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_arid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="S01_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arlen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_arlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S01_AXI_arlock" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arlock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_arlock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S01_AXI_arqos" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arqos">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_arqos"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S01_AXI_arregion" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arregion">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_arregion"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S01_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_arsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S01_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awburst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_awburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S01_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awcache">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_awcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S01_AXI_awid" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_awid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="S01_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awlen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_awlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S01_AXI_awlock" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awlock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_awlock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S01_AXI_awqos" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awqos">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_awqos"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S01_AXI_awregion" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awregion">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_awregion"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S01_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_awsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="S01_AXI_bid" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_bid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_bid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="S01_AXI_rid" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_rid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_rid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S01_AXI_rlast" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_rlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_rlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S01_AXI_wlast" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_wlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_wlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="M02_ACLK" SIGIS="clk" SIGNAME="PS_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_clockc_0" PORT="FCLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="M02_ARESETN" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="M03_ACLK" SIGIS="clk" SIGNAME="PS_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_clockc_0" PORT="FCLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="M03_ARESETN" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_AWADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="M02_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_awprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_AWPROT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_awvalid" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_AWVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_awready" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_AWREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M02_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_WDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M02_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_WSTRB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_wvalid" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_WVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_wready" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_WREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M02_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_BRESP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_bvalid" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_BVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_bready" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_BREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M02_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_ARADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="M02_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_arprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_ARPROT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_arvalid" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_ARVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_arready" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_ARREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M02_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_RDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M02_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_RRESP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M02_AXI_rvalid" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_RVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M02_AXI_rready" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="C_RREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_AWADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="M03_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_awprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_AWPROT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_awvalid" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_AWVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_awready" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_AWREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_WDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M03_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_WSTRB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_wvalid" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_WVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_wready" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_WREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M03_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_BRESP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_bvalid" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_BVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_bready" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_BREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M03_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_ARADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="M03_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_arprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_ARPROT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_arvalid" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_ARVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_arready" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_ARREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M03_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_RDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M03_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_RRESP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M03_AXI_rvalid" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_RVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M03_AXI_rready" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="C_RREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S01_AXI_aruser" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_aruser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_aruser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S01_AXI_awuser" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_awuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="S01_AXI_buser" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_buser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_buser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="S01_AXI_ruser" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_ruser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_ruser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S01_AXI_wuser" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_wuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_wuser"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="PS_M_AXI_GP0" NAME="S00_AXI" TYPE="SLAVE">
@@ -1856,6 +2782,100 @@
             <PORTMAP PHYSICAL="M01_AXI_rresp"/>
             <PORTMAP PHYSICAL="M01_AXI_rvalid"/>
             <PORTMAP PHYSICAL="M01_AXI_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="NVMeHostController_0_m1_axi" NAME="S01_AXI" TYPE="SLAVE">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="S01_AXI_awaddr"/>
+            <PORTMAP PHYSICAL="S01_AXI_awprot"/>
+            <PORTMAP PHYSICAL="S01_AXI_awvalid"/>
+            <PORTMAP PHYSICAL="S01_AXI_awready"/>
+            <PORTMAP PHYSICAL="S01_AXI_wdata"/>
+            <PORTMAP PHYSICAL="S01_AXI_wstrb"/>
+            <PORTMAP PHYSICAL="S01_AXI_wvalid"/>
+            <PORTMAP PHYSICAL="S01_AXI_wready"/>
+            <PORTMAP PHYSICAL="S01_AXI_bresp"/>
+            <PORTMAP PHYSICAL="S01_AXI_bvalid"/>
+            <PORTMAP PHYSICAL="S01_AXI_bready"/>
+            <PORTMAP PHYSICAL="S01_AXI_araddr"/>
+            <PORTMAP PHYSICAL="S01_AXI_arprot"/>
+            <PORTMAP PHYSICAL="S01_AXI_arvalid"/>
+            <PORTMAP PHYSICAL="S01_AXI_arready"/>
+            <PORTMAP PHYSICAL="S01_AXI_rdata"/>
+            <PORTMAP PHYSICAL="S01_AXI_rresp"/>
+            <PORTMAP PHYSICAL="S01_AXI_rvalid"/>
+            <PORTMAP PHYSICAL="S01_AXI_rready"/>
+            <PORTMAP PHYSICAL="S01_AXI_arburst"/>
+            <PORTMAP PHYSICAL="S01_AXI_arcache"/>
+            <PORTMAP PHYSICAL="S01_AXI_arid"/>
+            <PORTMAP PHYSICAL="S01_AXI_arlen"/>
+            <PORTMAP PHYSICAL="S01_AXI_arlock"/>
+            <PORTMAP PHYSICAL="S01_AXI_arqos"/>
+            <PORTMAP PHYSICAL="S01_AXI_arregion"/>
+            <PORTMAP PHYSICAL="S01_AXI_arsize"/>
+            <PORTMAP PHYSICAL="S01_AXI_awburst"/>
+            <PORTMAP PHYSICAL="S01_AXI_awcache"/>
+            <PORTMAP PHYSICAL="S01_AXI_awid"/>
+            <PORTMAP PHYSICAL="S01_AXI_awlen"/>
+            <PORTMAP PHYSICAL="S01_AXI_awlock"/>
+            <PORTMAP PHYSICAL="S01_AXI_awqos"/>
+            <PORTMAP PHYSICAL="S01_AXI_awregion"/>
+            <PORTMAP PHYSICAL="S01_AXI_awsize"/>
+            <PORTMAP PHYSICAL="S01_AXI_bid"/>
+            <PORTMAP PHYSICAL="S01_AXI_rid"/>
+            <PORTMAP PHYSICAL="S01_AXI_rlast"/>
+            <PORTMAP PHYSICAL="S01_AXI_wlast"/>
+            <PORTMAP PHYSICAL="S01_AXI_aruser"/>
+            <PORTMAP PHYSICAL="S01_AXI_awuser"/>
+            <PORTMAP PHYSICAL="S01_AXI_buser"/>
+            <PORTMAP PHYSICAL="S01_AXI_ruser"/>
+            <PORTMAP PHYSICAL="S01_AXI_wuser"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="GPIC0_M02_AXI" NAME="M02_AXI" TYPE="MASTER">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="M02_AXI_awaddr"/>
+            <PORTMAP PHYSICAL="M02_AXI_awprot"/>
+            <PORTMAP PHYSICAL="M02_AXI_awvalid"/>
+            <PORTMAP PHYSICAL="M02_AXI_awready"/>
+            <PORTMAP PHYSICAL="M02_AXI_wdata"/>
+            <PORTMAP PHYSICAL="M02_AXI_wstrb"/>
+            <PORTMAP PHYSICAL="M02_AXI_wvalid"/>
+            <PORTMAP PHYSICAL="M02_AXI_wready"/>
+            <PORTMAP PHYSICAL="M02_AXI_bresp"/>
+            <PORTMAP PHYSICAL="M02_AXI_bvalid"/>
+            <PORTMAP PHYSICAL="M02_AXI_bready"/>
+            <PORTMAP PHYSICAL="M02_AXI_araddr"/>
+            <PORTMAP PHYSICAL="M02_AXI_arprot"/>
+            <PORTMAP PHYSICAL="M02_AXI_arvalid"/>
+            <PORTMAP PHYSICAL="M02_AXI_arready"/>
+            <PORTMAP PHYSICAL="M02_AXI_rdata"/>
+            <PORTMAP PHYSICAL="M02_AXI_rresp"/>
+            <PORTMAP PHYSICAL="M02_AXI_rvalid"/>
+            <PORTMAP PHYSICAL="M02_AXI_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="GPIC0_M03_AXI" NAME="M03_AXI" TYPE="MASTER">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="M03_AXI_awaddr"/>
+            <PORTMAP PHYSICAL="M03_AXI_awprot"/>
+            <PORTMAP PHYSICAL="M03_AXI_awvalid"/>
+            <PORTMAP PHYSICAL="M03_AXI_awready"/>
+            <PORTMAP PHYSICAL="M03_AXI_wdata"/>
+            <PORTMAP PHYSICAL="M03_AXI_wstrb"/>
+            <PORTMAP PHYSICAL="M03_AXI_wvalid"/>
+            <PORTMAP PHYSICAL="M03_AXI_wready"/>
+            <PORTMAP PHYSICAL="M03_AXI_bresp"/>
+            <PORTMAP PHYSICAL="M03_AXI_bvalid"/>
+            <PORTMAP PHYSICAL="M03_AXI_bready"/>
+            <PORTMAP PHYSICAL="M03_AXI_araddr"/>
+            <PORTMAP PHYSICAL="M03_AXI_arprot"/>
+            <PORTMAP PHYSICAL="M03_AXI_arvalid"/>
+            <PORTMAP PHYSICAL="M03_AXI_arready"/>
+            <PORTMAP PHYSICAL="M03_AXI_rdata"/>
+            <PORTMAP PHYSICAL="M03_AXI_rresp"/>
+            <PORTMAP PHYSICAL="M03_AXI_rvalid"/>
+            <PORTMAP PHYSICAL="M03_AXI_rready"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -3413,6 +4433,15 @@
         <PARAMETER NAME="C_M0_AXI_BUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_M0_AXI_ARUSER_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_M0_AXI_RUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M1_AXI_ADDR_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_M1_AXI_DATA_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="C_M1_AXI_ID_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M1_AXI_AWUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M1_AXI_WUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M1_AXI_BUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M1_AXI_ARUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M1_AXI_RUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M1_AXI_BASSADDR" VALUE="0x20000000"/>
         <PARAMETER NAME="Component_Name" VALUE="OpenSSD2_NVMeHostController_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
         <PARAMETER NAME="C_BASEADDR" VALUE="0x83C00000"/>
@@ -3759,6 +4788,237 @@
             <CONNECTION INSTANCE="HPIC3" PORT="S00_AXI_rready"/>
           </CONNECTIONS>
         </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="m1_axi_aclk" SIGIS="clk" SIGNAME="PS_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_clockc_0" PORT="FCLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m1_axi_aresetn" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="m1_axi_awid" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_awid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m1_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="m1_axi_awlen" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awlen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_awlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m1_axi_awsize" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_awsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m1_axi_awburst" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awburst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_awburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m1_axi_awlock" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awlock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_awlock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m1_axi_awcache" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awcache">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_awcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m1_axi_awprot" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m1_axi_awregion" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awregion">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_awregion"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m1_axi_awqos" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awqos">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_awqos"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="m1_axi_awuser" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_awuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m1_axi_awvalid" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m1_axi_awready" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="m1_axi_wid" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="63" NAME="m1_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="m1_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m1_axi_wlast" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_wlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_wlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="m1_axi_wuser" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_wuser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_wuser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m1_axi_wvalid" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m1_axi_wready" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="m1_axi_bid" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_bid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_bid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="m1_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m1_axi_bvalid" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="m1_axi_buser" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_buser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_buser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m1_axi_bready" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="m1_axi_arid" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_arid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m1_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="m1_axi_arlen" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arlen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_arlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m1_axi_arsize" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arsize">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_arsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="m1_axi_arburst" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arburst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_arburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m1_axi_arlock" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arlock">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_arlock"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m1_axi_arcache" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arcache">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_arcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m1_axi_arprot" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m1_axi_arregion" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arregion">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_arregion"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m1_axi_arqos" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arqos">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_arqos"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="m1_axi_aruser" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_aruser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_aruser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m1_axi_arvalid" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m1_axi_arready" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="m1_axi_rid" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_rid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_rid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="m1_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="m1_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m1_axi_rlast" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_rlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_rlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="m1_axi_ruser" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_ruser">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_ruser"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m1_axi_rvalid" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m1_axi_rready" SIGIS="undef" SIGNAME="GPIC0_S01_AXI_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_AXI_rready"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" IRQID="61" NAME="dev_irq_assert" SIGIS="undef" SIGNAME="NVMeHostController_0_dev_irq_assert">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_scugic_0" PORT="IRQ_F2P"/>
@@ -3873,12 +5133,69 @@
             <PORTMAP PHYSICAL="s0_axi_rready"/>
           </PORTMAPS>
         </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="NVMeHostController_0_m1_axi" NAME="m1_axi" TYPE="MASTER">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="m1_axi_awid"/>
+            <PORTMAP PHYSICAL="m1_axi_awaddr"/>
+            <PORTMAP PHYSICAL="m1_axi_awlen"/>
+            <PORTMAP PHYSICAL="m1_axi_awsize"/>
+            <PORTMAP PHYSICAL="m1_axi_awburst"/>
+            <PORTMAP PHYSICAL="m1_axi_awlock"/>
+            <PORTMAP PHYSICAL="m1_axi_awcache"/>
+            <PORTMAP PHYSICAL="m1_axi_awprot"/>
+            <PORTMAP PHYSICAL="m1_axi_awregion"/>
+            <PORTMAP PHYSICAL="m1_axi_awqos"/>
+            <PORTMAP PHYSICAL="m1_axi_awuser"/>
+            <PORTMAP PHYSICAL="m1_axi_awvalid"/>
+            <PORTMAP PHYSICAL="m1_axi_awready"/>
+            <PORTMAP PHYSICAL="m1_axi_wid"/>
+            <PORTMAP PHYSICAL="m1_axi_wdata"/>
+            <PORTMAP PHYSICAL="m1_axi_wstrb"/>
+            <PORTMAP PHYSICAL="m1_axi_wlast"/>
+            <PORTMAP PHYSICAL="m1_axi_wuser"/>
+            <PORTMAP PHYSICAL="m1_axi_wvalid"/>
+            <PORTMAP PHYSICAL="m1_axi_wready"/>
+            <PORTMAP PHYSICAL="m1_axi_bid"/>
+            <PORTMAP PHYSICAL="m1_axi_bresp"/>
+            <PORTMAP PHYSICAL="m1_axi_buser"/>
+            <PORTMAP PHYSICAL="m1_axi_bvalid"/>
+            <PORTMAP PHYSICAL="m1_axi_bready"/>
+            <PORTMAP PHYSICAL="m1_axi_arid"/>
+            <PORTMAP PHYSICAL="m1_axi_araddr"/>
+            <PORTMAP PHYSICAL="m1_axi_arlen"/>
+            <PORTMAP PHYSICAL="m1_axi_arsize"/>
+            <PORTMAP PHYSICAL="m1_axi_arburst"/>
+            <PORTMAP PHYSICAL="m1_axi_arlock"/>
+            <PORTMAP PHYSICAL="m1_axi_arcache"/>
+            <PORTMAP PHYSICAL="m1_axi_arprot"/>
+            <PORTMAP PHYSICAL="m1_axi_arregion"/>
+            <PORTMAP PHYSICAL="m1_axi_arqos"/>
+            <PORTMAP PHYSICAL="m1_axi_aruser"/>
+            <PORTMAP PHYSICAL="m1_axi_arvalid"/>
+            <PORTMAP PHYSICAL="m1_axi_arready"/>
+            <PORTMAP PHYSICAL="m1_axi_rid"/>
+            <PORTMAP PHYSICAL="m1_axi_rdata"/>
+            <PORTMAP PHYSICAL="m1_axi_rresp"/>
+            <PORTMAP PHYSICAL="m1_axi_rlast"/>
+            <PORTMAP PHYSICAL="m1_axi_ruser"/>
+            <PORTMAP PHYSICAL="m1_axi_rvalid"/>
+            <PORTMAP PHYSICAL="m1_axi_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
       </BUSINTERFACES>
       <MEMORYMAP>
+        <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C0FFFF" INSTANCE="Tiger4NSC_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
+        <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C10000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C1FFFF" INSTANCE="Tiger4NSC_1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
+        <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C20000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C2FFFF" INSTANCE="Tiger4NSC_2" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
+        <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C30000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C3FFFF" INSTANCE="Tiger4NSC_3" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00100000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x3FFFFFFF" INSTANCE="ps7_ddr_0" IS_DATA="FALSE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x0003FFFF" INSTANCE="ps7_ram_0" IS_DATA="FALSE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
       </MEMORYMAP>
       <PERIPHERALS>
+        <PERIPHERAL INSTANCE="Tiger4NSC_0"/>
+        <PERIPHERAL INSTANCE="Tiger4NSC_1"/>
+        <PERIPHERAL INSTANCE="Tiger4NSC_2"/>
+        <PERIPHERAL INSTANCE="Tiger4NSC_3"/>
         <PERIPHERAL INSTANCE="ps7_ddr_0"/>
         <PERIPHERAL INSTANCE="ps7_ram_0"/>
       </PERIPHERALS>
@@ -4235,11 +5552,7 @@
             <CONNECTION INSTANCE="Dispatcher_uCode_0" PORT="clka"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="oROMReset" SIGIS="undef" SIGNAME="Dispatcher_uCode_0_rsta">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="Dispatcher_uCode_0" PORT="rsta"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" NAME="oROMReset" SIGIS="undef"/>
         <PORT DIR="O" LEFT="255" NAME="oROMAddr" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_0_addra">
           <CONNECTIONS>
             <CONNECTION INSTANCE="Dispatcher_uCode_0" PORT="addra"/>
@@ -4981,6 +6294,1104 @@
         <PERIPHERAL INSTANCE="ps7_ram_0"/>
       </PERIPHERALS>
     </MODULE>
+    <MODULE FULLNAME="/Tiger4NSC_2" HWVERSION="1.2.5" INSTANCE="Tiger4NSC_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Tiger4NSC" VLNV="ENCLab:ip:Tiger4NSC:1.2.5">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="NumberOfWays" VALUE="8"/>
+        <PARAMETER NAME="ProgWordWidth" VALUE="64"/>
+        <PARAMETER NAME="UProgSize" VALUE="256"/>
+        <PARAMETER NAME="BCHDecMulti" VALUE="2"/>
+        <PARAMETER NAME="GaloisFieldDegree" VALUE="12"/>
+        <PARAMETER NAME="MaxErrorCountBits" VALUE="9"/>
+        <PARAMETER NAME="Syndromes" VALUE="27"/>
+        <PARAMETER NAME="ELPCoefficients" VALUE="15"/>
+        <PARAMETER NAME="Component_Name" VALUE="OpenSSD2_Tiger4NSC_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="C_BASEADDR" VALUE="0x43C20000"/>
+        <PARAMETER NAME="C_HIGHADDR" VALUE="0x43C2FFFF"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="iClock" SIGIS="clk" SIGNAME="PS_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_clockc_0" PORT="FCLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iReset" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C_AWVALID" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C_AWREADY" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="C_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="C_AWPROT" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_awprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C_WVALID" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C_WREADY" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="C_WDATA" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="C_WSTRB" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C_BVALID" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C_BREADY" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="C_BRESP" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C_ARVALID" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C_ARREADY" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="C_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="C_ARPROT" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_arprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C_RVALID" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C_RREADY" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="C_RDATA" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="C_RRESP" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M02_AXI_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_AXI_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="D_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="D_AWLEN" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_awlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="D_AWSIZE" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_awsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="D_AWBURST" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_awburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="D_AWCACHE" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_awcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="D_AWPROT" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="D_AWVALID" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D_AWREADY" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="D_WDATA" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_WDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="D_WSTRB" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_WSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="D_WLAST" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_WLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_wlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="D_WVALID" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_WVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D_WREADY" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_WREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="D_BRESP" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_BRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D_BVALID" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_BVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="D_BREADY" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_BREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="D_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="D_ARLEN" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_arlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="D_ARSIZE" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_arsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="D_ARBURST" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_arburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="D_ARCACHE" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_arcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="D_ARPROT" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="D_ARVALID" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D_ARREADY" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="D_RDATA" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_RDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="D_RRESP" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_RRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D_RLAST" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_RLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_rlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D_RVALID" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_RVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="D_RREADY" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_RREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_AXI_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="oOpcode" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oOpcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="iOpcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="oTargetID" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oTargetID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="iTargetID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="oSourceID" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oSourceID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="iSourceID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="oAddress" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oAddress">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="iAddress"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="oLength" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oLength">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="iLength"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oCMDValid" SIGIS="undef" SIGNAME="Tiger4NSC_2_oCMDValid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="iCMDValid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iCMDReady" SIGIS="undef" SIGNAME="Tiger4NSC_2_iCMDReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="oCMDReady"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="oWriteData" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oWriteData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="iWriteData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oWriteLast" SIGIS="undef" SIGNAME="Tiger4NSC_2_oWriteLast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="iWriteLast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oWriteValid" SIGIS="undef" SIGNAME="Tiger4NSC_2_oWriteValid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="iWriteValid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iWriteReady" SIGIS="undef" SIGNAME="Tiger4NSC_2_iWriteReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="oWriteReady"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="iReadData" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_iReadData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="oReadData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iReadLast" SIGIS="undef" SIGNAME="Tiger4NSC_2_iReadLast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="oReadLast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iReadValid" SIGIS="undef" SIGNAME="Tiger4NSC_2_iReadValid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="oReadValid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oReadReady" SIGIS="undef" SIGNAME="Tiger4NSC_2_oReadReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="iReadReady"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="iReadyBusy" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_iReadyBusy">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="oReadyBusy"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oROMClock" SIGIS="undef" SIGNAME="Dispatcher_uCode_2_clka">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Dispatcher_uCode_2" PORT="clka"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oROMReset" SIGIS="undef" SIGNAME="Dispatcher_uCode_2_rsta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Dispatcher_uCode_2" PORT="rsta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="255" NAME="oROMAddr" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_2_addra">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Dispatcher_uCode_2" PORT="addra"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oROMRW" SIGIS="undef" SIGNAME="Dispatcher_uCode_2_wea">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Dispatcher_uCode_2" PORT="wea"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oROMEnable" SIGIS="undef" SIGNAME="Dispatcher_uCode_2_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Dispatcher_uCode_2" PORT="ena"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="oROMWData" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_2_dina">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Dispatcher_uCode_2" PORT="dina"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="iROMRData" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_2_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Dispatcher_uCode_2" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSharedKESReady" SIGIS="undef" SIGNAME="Tiger4NSC_2_iSharedKESReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="oSharedKESReady_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="oErrorDetectionEnd" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oErrorDetectionEnd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="iErrorDetectionEnd_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="oDecodeNeeded" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oDecodeNeeded">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="iDecodeNeeded_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="647" NAME="oSyndromes" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oSyndromes">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="iSyndromes_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iIntraSharedKESEnd" SIGIS="undef" SIGNAME="Tiger4NSC_2_iIntraSharedKESEnd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="oIntraSharedKESEnd_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="iErroredChunk" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_iErroredChunk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="oErroredChunk_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="iCorrectionFail" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_iCorrectionFail">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="oCorrectionFail_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="17" NAME="iErrorCount" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_iErrorCount">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="oClusterErrorCount_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="359" NAME="iELPCoefficients" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_iELPCoefficients">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="oELPCoefficients_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oCSAvailable" SIGIS="undef" SIGNAME="Tiger4NSC_2_oCSAvailable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="iCSAvailable_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="O_DEBUG" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="GPIC0_M02_AXI" NAME="C_AXI" TYPE="SLAVE">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="C_AWADDR"/>
+            <PORTMAP PHYSICAL="C_AWPROT"/>
+            <PORTMAP PHYSICAL="C_AWVALID"/>
+            <PORTMAP PHYSICAL="C_AWREADY"/>
+            <PORTMAP PHYSICAL="C_WDATA"/>
+            <PORTMAP PHYSICAL="C_WSTRB"/>
+            <PORTMAP PHYSICAL="C_WVALID"/>
+            <PORTMAP PHYSICAL="C_WREADY"/>
+            <PORTMAP PHYSICAL="C_BRESP"/>
+            <PORTMAP PHYSICAL="C_BVALID"/>
+            <PORTMAP PHYSICAL="C_BREADY"/>
+            <PORTMAP PHYSICAL="C_ARADDR"/>
+            <PORTMAP PHYSICAL="C_ARPROT"/>
+            <PORTMAP PHYSICAL="C_ARVALID"/>
+            <PORTMAP PHYSICAL="C_ARREADY"/>
+            <PORTMAP PHYSICAL="C_RDATA"/>
+            <PORTMAP PHYSICAL="C_RRESP"/>
+            <PORTMAP PHYSICAL="C_RVALID"/>
+            <PORTMAP PHYSICAL="C_RREADY"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="Tiger4NSC_2_D_AXI" NAME="D_AXI" TYPE="MASTER">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="D_AWADDR"/>
+            <PORTMAP PHYSICAL="D_AWLEN"/>
+            <PORTMAP PHYSICAL="D_AWSIZE"/>
+            <PORTMAP PHYSICAL="D_AWBURST"/>
+            <PORTMAP PHYSICAL="D_AWCACHE"/>
+            <PORTMAP PHYSICAL="D_AWPROT"/>
+            <PORTMAP PHYSICAL="D_AWVALID"/>
+            <PORTMAP PHYSICAL="D_AWREADY"/>
+            <PORTMAP PHYSICAL="D_WDATA"/>
+            <PORTMAP PHYSICAL="D_WSTRB"/>
+            <PORTMAP PHYSICAL="D_WLAST"/>
+            <PORTMAP PHYSICAL="D_WVALID"/>
+            <PORTMAP PHYSICAL="D_WREADY"/>
+            <PORTMAP PHYSICAL="D_BRESP"/>
+            <PORTMAP PHYSICAL="D_BVALID"/>
+            <PORTMAP PHYSICAL="D_BREADY"/>
+            <PORTMAP PHYSICAL="D_ARADDR"/>
+            <PORTMAP PHYSICAL="D_ARLEN"/>
+            <PORTMAP PHYSICAL="D_ARSIZE"/>
+            <PORTMAP PHYSICAL="D_ARBURST"/>
+            <PORTMAP PHYSICAL="D_ARCACHE"/>
+            <PORTMAP PHYSICAL="D_ARPROT"/>
+            <PORTMAP PHYSICAL="D_ARVALID"/>
+            <PORTMAP PHYSICAL="D_ARREADY"/>
+            <PORTMAP PHYSICAL="D_RDATA"/>
+            <PORTMAP PHYSICAL="D_RRESP"/>
+            <PORTMAP PHYSICAL="D_RLAST"/>
+            <PORTMAP PHYSICAL="D_RVALID"/>
+            <PORTMAP PHYSICAL="D_RREADY"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="Tiger4NSC_2_NFCInterface" NAME="NFCInterface" TYPE="INITIATOR">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="oOpcode"/>
+            <PORTMAP PHYSICAL="oTargetID"/>
+            <PORTMAP PHYSICAL="oSourceID"/>
+            <PORTMAP PHYSICAL="oAddress"/>
+            <PORTMAP PHYSICAL="oLength"/>
+            <PORTMAP PHYSICAL="oCMDValid"/>
+            <PORTMAP PHYSICAL="iCMDReady"/>
+            <PORTMAP PHYSICAL="oWriteData"/>
+            <PORTMAP PHYSICAL="oWriteLast"/>
+            <PORTMAP PHYSICAL="oWriteValid"/>
+            <PORTMAP PHYSICAL="iWriteReady"/>
+            <PORTMAP PHYSICAL="iReadData"/>
+            <PORTMAP PHYSICAL="iReadLast"/>
+            <PORTMAP PHYSICAL="iReadValid"/>
+            <PORTMAP PHYSICAL="oReadReady"/>
+            <PORTMAP PHYSICAL="iReadyBusy"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="Tiger4NSC_2_uROMInterface" NAME="uROMInterface" TYPE="INITIATOR">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="oROMEnable"/>
+            <PORTMAP PHYSICAL="oROMAddr"/>
+            <PORTMAP PHYSICAL="oROMWData"/>
+            <PORTMAP PHYSICAL="iROMRData"/>
+            <PORTMAP PHYSICAL="oROMRW"/>
+            <PORTMAP PHYSICAL="oROMReset"/>
+            <PORTMAP PHYSICAL="oROMClock"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="Tiger4NSC_2_SharedKESInterface" NAME="SharedKESInterface" TYPE="INITIATOR">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="iSharedKESReady"/>
+            <PORTMAP PHYSICAL="oErrorDetectionEnd"/>
+            <PORTMAP PHYSICAL="oDecodeNeeded"/>
+            <PORTMAP PHYSICAL="oSyndromes"/>
+            <PORTMAP PHYSICAL="iIntraSharedKESEnd"/>
+            <PORTMAP PHYSICAL="iErroredChunk"/>
+            <PORTMAP PHYSICAL="iCorrectionFail"/>
+            <PORTMAP PHYSICAL="iErrorCount"/>
+            <PORTMAP PHYSICAL="iELPCoefficients"/>
+            <PORTMAP PHYSICAL="oCSAvailable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+      <MEMORYMAP>
+        <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00100000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x3FFFFFFF" INSTANCE="ps7_ddr_0" IS_DATA="FALSE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
+        <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x0003FFFF" INSTANCE="ps7_ram_0" IS_DATA="FALSE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
+      </MEMORYMAP>
+      <PERIPHERALS>
+        <PERIPHERAL INSTANCE="V2NFC100DDR_2"/>
+        <PERIPHERAL INSTANCE="Dispatcher_uCode_2"/>
+        <PERIPHERAL INSTANCE="Tiger4SharedKES_0"/>
+        <PERIPHERAL INSTANCE="ps7_ddr_0"/>
+        <PERIPHERAL INSTANCE="ps7_ram_0"/>
+      </PERIPHERALS>
+    </MODULE>
+    <MODULE FULLNAME="/Tiger4NSC_3" HWVERSION="1.2.5" INSTANCE="Tiger4NSC_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Tiger4NSC" VLNV="ENCLab:ip:Tiger4NSC:1.2.5">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="NumberOfWays" VALUE="8"/>
+        <PARAMETER NAME="ProgWordWidth" VALUE="64"/>
+        <PARAMETER NAME="UProgSize" VALUE="256"/>
+        <PARAMETER NAME="BCHDecMulti" VALUE="2"/>
+        <PARAMETER NAME="GaloisFieldDegree" VALUE="12"/>
+        <PARAMETER NAME="MaxErrorCountBits" VALUE="9"/>
+        <PARAMETER NAME="Syndromes" VALUE="27"/>
+        <PARAMETER NAME="ELPCoefficients" VALUE="15"/>
+        <PARAMETER NAME="Component_Name" VALUE="OpenSSD2_Tiger4NSC_1_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+        <PARAMETER NAME="C_BASEADDR" VALUE="0x43C30000"/>
+        <PARAMETER NAME="C_HIGHADDR" VALUE="0x43C3FFFF"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="iClock" SIGIS="clk" SIGNAME="PS_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_clockc_0" PORT="FCLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iReset" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C_AWVALID" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C_AWREADY" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="C_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="C_AWPROT" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_awprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C_WVALID" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C_WREADY" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="C_WDATA" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="C_WSTRB" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C_BVALID" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C_BREADY" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="C_BRESP" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C_ARVALID" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C_ARREADY" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="C_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="C_ARPROT" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_arprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C_RVALID" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C_RREADY" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="C_RDATA" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="C_RRESP" RIGHT="0" SIGIS="undef" SIGNAME="GPIC0_M03_AXI_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_AXI_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="D_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="D_AWLEN" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_awlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="D_AWSIZE" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_awsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="D_AWBURST" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_awburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="D_AWCACHE" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_awcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="D_AWPROT" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="D_AWVALID" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D_AWREADY" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="D_WDATA" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_WDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="D_WSTRB" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_WSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="D_WLAST" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_WLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_wlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="D_WVALID" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_WVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D_WREADY" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_WREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="D_BRESP" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_BRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D_BVALID" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_BVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="D_BREADY" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_BREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="D_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="D_ARLEN" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_arlen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="D_ARSIZE" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_arsize"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="D_ARBURST" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_arburst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="D_ARCACHE" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_arcache"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="D_ARPROT" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="D_ARVALID" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D_ARREADY" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="D_RDATA" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_RDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="D_RRESP" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_RRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D_RLAST" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_RLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_rlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D_RVALID" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_RVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="D_RREADY" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_RREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_AXI_rready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="5" NAME="oOpcode" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oOpcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="iOpcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="oTargetID" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oTargetID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="iTargetID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="oSourceID" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oSourceID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="iSourceID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="oAddress" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oAddress">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="iAddress"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="oLength" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oLength">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="iLength"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oCMDValid" SIGIS="undef" SIGNAME="Tiger4NSC_3_oCMDValid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="iCMDValid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iCMDReady" SIGIS="undef" SIGNAME="Tiger4NSC_3_iCMDReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="oCMDReady"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="oWriteData" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oWriteData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="iWriteData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oWriteLast" SIGIS="undef" SIGNAME="Tiger4NSC_3_oWriteLast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="iWriteLast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oWriteValid" SIGIS="undef" SIGNAME="Tiger4NSC_3_oWriteValid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="iWriteValid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iWriteReady" SIGIS="undef" SIGNAME="Tiger4NSC_3_iWriteReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="oWriteReady"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="iReadData" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_iReadData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="oReadData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iReadLast" SIGIS="undef" SIGNAME="Tiger4NSC_3_iReadLast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="oReadLast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iReadValid" SIGIS="undef" SIGNAME="Tiger4NSC_3_iReadValid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="oReadValid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oReadReady" SIGIS="undef" SIGNAME="Tiger4NSC_3_oReadReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="iReadReady"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="iReadyBusy" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_iReadyBusy">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="oReadyBusy"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oROMClock" SIGIS="undef" SIGNAME="Dispatcher_uCode_3_clka">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Dispatcher_uCode_3" PORT="clka"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oROMReset" SIGIS="undef" SIGNAME="Dispatcher_uCode_3_rsta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Dispatcher_uCode_3" PORT="rsta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="255" NAME="oROMAddr" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_3_addra">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Dispatcher_uCode_3" PORT="addra"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oROMRW" SIGIS="undef" SIGNAME="Dispatcher_uCode_3_wea">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Dispatcher_uCode_3" PORT="wea"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oROMEnable" SIGIS="undef" SIGNAME="Dispatcher_uCode_3_ena">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Dispatcher_uCode_3" PORT="ena"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="oROMWData" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_3_dina">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Dispatcher_uCode_3" PORT="dina"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="iROMRData" RIGHT="0" SIGIS="undef" SIGNAME="Dispatcher_uCode_3_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Dispatcher_uCode_3" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iSharedKESReady" SIGIS="undef" SIGNAME="Tiger4NSC_3_iSharedKESReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="oSharedKESReady_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="oErrorDetectionEnd" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oErrorDetectionEnd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="iErrorDetectionEnd_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="oDecodeNeeded" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oDecodeNeeded">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="iDecodeNeeded_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="647" NAME="oSyndromes" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oSyndromes">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="iSyndromes_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iIntraSharedKESEnd" SIGIS="undef" SIGNAME="Tiger4NSC_3_iIntraSharedKESEnd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="oIntraSharedKESEnd_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="iErroredChunk" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_iErroredChunk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="oErroredChunk_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="iCorrectionFail" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_iCorrectionFail">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="oCorrectionFail_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="17" NAME="iErrorCount" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_iErrorCount">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="oClusterErrorCount_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="359" NAME="iELPCoefficients" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_iELPCoefficients">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="oELPCoefficients_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oCSAvailable" SIGIS="undef" SIGNAME="Tiger4NSC_3_oCSAvailable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="iCSAvailable_3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="O_DEBUG" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="GPIC0_M03_AXI" NAME="C_AXI" TYPE="SLAVE">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="C_AWADDR"/>
+            <PORTMAP PHYSICAL="C_AWPROT"/>
+            <PORTMAP PHYSICAL="C_AWVALID"/>
+            <PORTMAP PHYSICAL="C_AWREADY"/>
+            <PORTMAP PHYSICAL="C_WDATA"/>
+            <PORTMAP PHYSICAL="C_WSTRB"/>
+            <PORTMAP PHYSICAL="C_WVALID"/>
+            <PORTMAP PHYSICAL="C_WREADY"/>
+            <PORTMAP PHYSICAL="C_BRESP"/>
+            <PORTMAP PHYSICAL="C_BVALID"/>
+            <PORTMAP PHYSICAL="C_BREADY"/>
+            <PORTMAP PHYSICAL="C_ARADDR"/>
+            <PORTMAP PHYSICAL="C_ARPROT"/>
+            <PORTMAP PHYSICAL="C_ARVALID"/>
+            <PORTMAP PHYSICAL="C_ARREADY"/>
+            <PORTMAP PHYSICAL="C_RDATA"/>
+            <PORTMAP PHYSICAL="C_RRESP"/>
+            <PORTMAP PHYSICAL="C_RVALID"/>
+            <PORTMAP PHYSICAL="C_RREADY"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="Tiger4NSC_3_D_AXI" NAME="D_AXI" TYPE="MASTER">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="D_AWADDR"/>
+            <PORTMAP PHYSICAL="D_AWLEN"/>
+            <PORTMAP PHYSICAL="D_AWSIZE"/>
+            <PORTMAP PHYSICAL="D_AWBURST"/>
+            <PORTMAP PHYSICAL="D_AWCACHE"/>
+            <PORTMAP PHYSICAL="D_AWPROT"/>
+            <PORTMAP PHYSICAL="D_AWVALID"/>
+            <PORTMAP PHYSICAL="D_AWREADY"/>
+            <PORTMAP PHYSICAL="D_WDATA"/>
+            <PORTMAP PHYSICAL="D_WSTRB"/>
+            <PORTMAP PHYSICAL="D_WLAST"/>
+            <PORTMAP PHYSICAL="D_WVALID"/>
+            <PORTMAP PHYSICAL="D_WREADY"/>
+            <PORTMAP PHYSICAL="D_BRESP"/>
+            <PORTMAP PHYSICAL="D_BVALID"/>
+            <PORTMAP PHYSICAL="D_BREADY"/>
+            <PORTMAP PHYSICAL="D_ARADDR"/>
+            <PORTMAP PHYSICAL="D_ARLEN"/>
+            <PORTMAP PHYSICAL="D_ARSIZE"/>
+            <PORTMAP PHYSICAL="D_ARBURST"/>
+            <PORTMAP PHYSICAL="D_ARCACHE"/>
+            <PORTMAP PHYSICAL="D_ARPROT"/>
+            <PORTMAP PHYSICAL="D_ARVALID"/>
+            <PORTMAP PHYSICAL="D_ARREADY"/>
+            <PORTMAP PHYSICAL="D_RDATA"/>
+            <PORTMAP PHYSICAL="D_RRESP"/>
+            <PORTMAP PHYSICAL="D_RLAST"/>
+            <PORTMAP PHYSICAL="D_RVALID"/>
+            <PORTMAP PHYSICAL="D_RREADY"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="Tiger4NSC_3_NFCInterface" NAME="NFCInterface" TYPE="INITIATOR">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="oOpcode"/>
+            <PORTMAP PHYSICAL="oTargetID"/>
+            <PORTMAP PHYSICAL="oSourceID"/>
+            <PORTMAP PHYSICAL="oAddress"/>
+            <PORTMAP PHYSICAL="oLength"/>
+            <PORTMAP PHYSICAL="oCMDValid"/>
+            <PORTMAP PHYSICAL="iCMDReady"/>
+            <PORTMAP PHYSICAL="oWriteData"/>
+            <PORTMAP PHYSICAL="oWriteLast"/>
+            <PORTMAP PHYSICAL="oWriteValid"/>
+            <PORTMAP PHYSICAL="iWriteReady"/>
+            <PORTMAP PHYSICAL="iReadData"/>
+            <PORTMAP PHYSICAL="iReadLast"/>
+            <PORTMAP PHYSICAL="iReadValid"/>
+            <PORTMAP PHYSICAL="oReadReady"/>
+            <PORTMAP PHYSICAL="iReadyBusy"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="Tiger4NSC_3_uROMInterface" NAME="uROMInterface" TYPE="INITIATOR">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="oROMEnable"/>
+            <PORTMAP PHYSICAL="oROMAddr"/>
+            <PORTMAP PHYSICAL="oROMWData"/>
+            <PORTMAP PHYSICAL="iROMRData"/>
+            <PORTMAP PHYSICAL="oROMRW"/>
+            <PORTMAP PHYSICAL="oROMReset"/>
+            <PORTMAP PHYSICAL="oROMClock"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="Tiger4NSC_3_SharedKESInterface" NAME="SharedKESInterface" TYPE="INITIATOR">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="iSharedKESReady"/>
+            <PORTMAP PHYSICAL="oErrorDetectionEnd"/>
+            <PORTMAP PHYSICAL="oDecodeNeeded"/>
+            <PORTMAP PHYSICAL="oSyndromes"/>
+            <PORTMAP PHYSICAL="iIntraSharedKESEnd"/>
+            <PORTMAP PHYSICAL="iErroredChunk"/>
+            <PORTMAP PHYSICAL="iCorrectionFail"/>
+            <PORTMAP PHYSICAL="iErrorCount"/>
+            <PORTMAP PHYSICAL="iELPCoefficients"/>
+            <PORTMAP PHYSICAL="oCSAvailable"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+      <MEMORYMAP>
+        <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00100000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x3FFFFFFF" INSTANCE="ps7_ddr_0" IS_DATA="FALSE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
+        <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00000000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x0003FFFF" INSTANCE="ps7_ram_0" IS_DATA="FALSE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
+      </MEMORYMAP>
+      <PERIPHERALS>
+        <PERIPHERAL INSTANCE="V2NFC100DDR_3"/>
+        <PERIPHERAL INSTANCE="Dispatcher_uCode_3"/>
+        <PERIPHERAL INSTANCE="Tiger4SharedKES_0"/>
+        <PERIPHERAL INSTANCE="ps7_ddr_0"/>
+        <PERIPHERAL INSTANCE="ps7_ram_0"/>
+      </PERIPHERALS>
+    </MODULE>
     <MODULE FULLNAME="/Tiger4SharedKES_0" HWVERSION="1.0.1" INSTANCE="Tiger4SharedKES_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Tiger4SharedKES" VLNV="ENCLab:ip:Tiger4SharedKES:1.0.1">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -5104,26 +7515,106 @@
             <CONNECTION INSTANCE="Tiger4NSC_1" PORT="iELPCoefficients"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="oSharedKESReady_2" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="iErrorDetectionEnd_2" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="iDecodeNeeded_2" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="647" NAME="iSyndromes_2" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="iCSAvailable_2" SIGIS="undef"/>
-        <PORT DIR="O" NAME="oIntraSharedKESEnd_2" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="1" NAME="oErroredChunk_2" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="1" NAME="oCorrectionFail_2" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="17" NAME="oClusterErrorCount_2" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="359" NAME="oELPCoefficients_2" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" NAME="oSharedKESReady_3" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="iErrorDetectionEnd_3" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="1" NAME="iDecodeNeeded_3" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="647" NAME="iSyndromes_3" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" NAME="iCSAvailable_3" SIGIS="undef"/>
-        <PORT DIR="O" NAME="oIntraSharedKESEnd_3" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="1" NAME="oErroredChunk_3" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="1" NAME="oCorrectionFail_3" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="17" NAME="oClusterErrorCount_3" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="359" NAME="oELPCoefficients_3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="oSharedKESReady_2" SIGIS="undef" SIGNAME="Tiger4NSC_2_iSharedKESReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iSharedKESReady"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="iErrorDetectionEnd_2" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oErrorDetectionEnd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oErrorDetectionEnd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="iDecodeNeeded_2" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oDecodeNeeded">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oDecodeNeeded"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="647" NAME="iSyndromes_2" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oSyndromes">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oSyndromes"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iCSAvailable_2" SIGIS="undef" SIGNAME="Tiger4NSC_2_oCSAvailable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oCSAvailable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oIntraSharedKESEnd_2" SIGIS="undef" SIGNAME="Tiger4NSC_2_iIntraSharedKESEnd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iIntraSharedKESEnd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="oErroredChunk_2" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_iErroredChunk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iErroredChunk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="oCorrectionFail_2" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_iCorrectionFail">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iCorrectionFail"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="17" NAME="oClusterErrorCount_2" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_iErrorCount">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iErrorCount"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="359" NAME="oELPCoefficients_2" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_iELPCoefficients">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iELPCoefficients"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oSharedKESReady_3" SIGIS="undef" SIGNAME="Tiger4NSC_3_iSharedKESReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iSharedKESReady"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="iErrorDetectionEnd_3" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oErrorDetectionEnd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oErrorDetectionEnd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="iDecodeNeeded_3" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oDecodeNeeded">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oDecodeNeeded"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="647" NAME="iSyndromes_3" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oSyndromes">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oSyndromes"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iCSAvailable_3" SIGIS="undef" SIGNAME="Tiger4NSC_3_oCSAvailable">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oCSAvailable"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oIntraSharedKESEnd_3" SIGIS="undef" SIGNAME="Tiger4NSC_3_iIntraSharedKESEnd">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iIntraSharedKESEnd"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="oErroredChunk_3" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_iErroredChunk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iErroredChunk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="oCorrectionFail_3" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_iCorrectionFail">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iCorrectionFail"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="17" NAME="oClusterErrorCount_3" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_iErrorCount">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iErrorCount"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="359" NAME="oELPCoefficients_3" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_iELPCoefficients">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iELPCoefficients"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="Tiger4NSC_0_SharedKESInterface" NAME="SharedKESInterface_CH0" TYPE="TARGET">
@@ -5154,7 +7645,7 @@
             <PORTMAP PHYSICAL="iCSAvailable_1"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="SharedKESInterface_CH2" TYPE="TARGET">
+        <BUSINTERFACE BUSNAME="Tiger4NSC_2_SharedKESInterface" NAME="SharedKESInterface_CH2" TYPE="TARGET">
           <PORTMAPS>
             <PORTMAP PHYSICAL="oSharedKESReady_2"/>
             <PORTMAP PHYSICAL="iErrorDetectionEnd_2"/>
@@ -5168,7 +7659,7 @@
             <PORTMAP PHYSICAL="iCSAvailable_2"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="__NOC__" NAME="SharedKESInterface_CH3" TYPE="TARGET">
+        <BUSINTERFACE BUSNAME="Tiger4NSC_3_SharedKESInterface" NAME="SharedKESInterface_CH3" TYPE="TARGET">
           <PORTMAPS>
             <PORTMAP PHYSICAL="oSharedKESReady_3"/>
             <PORTMAP PHYSICAL="iErrorDetectionEnd_3"/>
@@ -5562,12 +8053,390 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
+    <MODULE FULLNAME="/V2NFC100DDR_2" HWVERSION="1.0.0" INSTANCE="V2NFC100DDR_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="V2NFC100DDR" VLNV="ENCLab:ip:V2NFC100DDR:1.0.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="NumberOfWays" VALUE="8"/>
+        <PARAMETER NAME="IDelayValue" VALUE="13"/>
+        <PARAMETER NAME="InputClockBufferType" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="OpenSSD2_V2NFC100DDR_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="iSystemClock" SIGIS="clk" SIGNAME="PS_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_clockc_0" PORT="FCLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iDelayRefClock" SIGIS="undef" SIGNAME="CH0MMCMC1H200_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CH0MMCMC1H200" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iOutputDrivingClock" SIGIS="undef" SIGNAME="CH0MMCMC1H200_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CH0MMCMC1H200" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iReset" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="5" NAME="iOpcode" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oOpcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oOpcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="iTargetID" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oTargetID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oTargetID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="iSourceID" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oSourceID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oSourceID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="iAddress" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oAddress">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oAddress"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="iLength" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oLength">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oLength"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iCMDValid" SIGIS="undef" SIGNAME="Tiger4NSC_2_oCMDValid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oCMDValid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oCMDReady" SIGIS="undef" SIGNAME="Tiger4NSC_2_iCMDReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iCMDReady"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="iWriteData" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_oWriteData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oWriteData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iWriteLast" SIGIS="undef" SIGNAME="Tiger4NSC_2_oWriteLast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oWriteLast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iWriteValid" SIGIS="undef" SIGNAME="Tiger4NSC_2_oWriteValid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oWriteValid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oWriteReady" SIGIS="undef" SIGNAME="Tiger4NSC_2_iWriteReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iWriteReady"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="oReadData" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_iReadData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iReadData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oReadLast" SIGIS="undef" SIGNAME="Tiger4NSC_2_iReadLast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iReadLast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oReadValid" SIGIS="undef" SIGNAME="Tiger4NSC_2_iReadValid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iReadValid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iReadReady" SIGIS="undef" SIGNAME="Tiger4NSC_2_oReadReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="oReadReady"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="oReadyBusy" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_iReadyBusy">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iReadyBusy"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="IO_NAND_DQS_P" SIGIS="undef" SIGNAME="V2NFC100DDR_2_IO_NAND_DQS_P">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="IO_NAND_CH2_DQS_P"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="IO_NAND_DQS_N" SIGIS="undef" SIGNAME="V2NFC100DDR_2_IO_NAND_DQS_N">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="IO_NAND_CH2_DQS_N"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="7" NAME="IO_NAND_DQ" RIGHT="0" SIGIS="undef" SIGNAME="V2NFC100DDR_2_IO_NAND_DQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="IO_NAND_CH2_DQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="O_NAND_CE" RIGHT="0" SIGIS="undef" SIGNAME="V2NFC100DDR_2_O_NAND_CE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O_NAND_CH2_CE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="O_NAND_WE" SIGIS="undef" SIGNAME="V2NFC100DDR_2_O_NAND_WE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O_NAND_CH2_WE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="O_NAND_RE_P" SIGIS="undef" SIGNAME="V2NFC100DDR_2_O_NAND_RE_P">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O_NAND_CH2_RE_P"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="O_NAND_RE_N" SIGIS="undef" SIGNAME="V2NFC100DDR_2_O_NAND_RE_N">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O_NAND_CH2_RE_N"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="O_NAND_ALE" SIGIS="undef" SIGNAME="V2NFC100DDR_2_O_NAND_ALE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O_NAND_CH2_ALE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="O_NAND_CLE" SIGIS="undef" SIGNAME="V2NFC100DDR_2_O_NAND_CLE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O_NAND_CH2_CLE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="I_NAND_RB" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_I_NAND_CH2_RB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I_NAND_CH2_RB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="O_NAND_WP" SIGIS="undef" SIGNAME="V2NFC100DDR_2_O_NAND_WP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O_NAND_CH2_WP"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="Tiger4NSC_2_NFCInterface" NAME="NFCInterface" TYPE="TARGET">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="iOpcode"/>
+            <PORTMAP PHYSICAL="iTargetID"/>
+            <PORTMAP PHYSICAL="iSourceID"/>
+            <PORTMAP PHYSICAL="iAddress"/>
+            <PORTMAP PHYSICAL="iLength"/>
+            <PORTMAP PHYSICAL="iCMDValid"/>
+            <PORTMAP PHYSICAL="oCMDReady"/>
+            <PORTMAP PHYSICAL="iWriteData"/>
+            <PORTMAP PHYSICAL="iWriteLast"/>
+            <PORTMAP PHYSICAL="iWriteValid"/>
+            <PORTMAP PHYSICAL="oWriteReady"/>
+            <PORTMAP PHYSICAL="oReadData"/>
+            <PORTMAP PHYSICAL="oReadLast"/>
+            <PORTMAP PHYSICAL="oReadValid"/>
+            <PORTMAP PHYSICAL="iReadReady"/>
+            <PORTMAP PHYSICAL="oReadyBusy"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/V2NFC100DDR_3" HWVERSION="1.0.0" INSTANCE="V2NFC100DDR_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="V2NFC100DDR" VLNV="ENCLab:ip:V2NFC100DDR:1.0.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="NumberOfWays" VALUE="8"/>
+        <PARAMETER NAME="IDelayValue" VALUE="13"/>
+        <PARAMETER NAME="InputClockBufferType" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="OpenSSD2_V2NFC100DDR_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="iSystemClock" SIGIS="clk" SIGNAME="PS_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_clockc_0" PORT="FCLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iDelayRefClock" SIGIS="undef" SIGNAME="CH0MMCMC1H200_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CH0MMCMC1H200" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iOutputDrivingClock" SIGIS="undef" SIGNAME="CH0MMCMC1H200_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CH0MMCMC1H200" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iReset" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="5" NAME="iOpcode" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oOpcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oOpcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="iTargetID" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oTargetID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oTargetID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="iSourceID" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oSourceID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oSourceID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="iAddress" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oAddress">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oAddress"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="iLength" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oLength">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oLength"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iCMDValid" SIGIS="undef" SIGNAME="Tiger4NSC_3_oCMDValid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oCMDValid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oCMDReady" SIGIS="undef" SIGNAME="Tiger4NSC_3_iCMDReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iCMDReady"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="iWriteData" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_oWriteData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oWriteData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iWriteLast" SIGIS="undef" SIGNAME="Tiger4NSC_3_oWriteLast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oWriteLast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iWriteValid" SIGIS="undef" SIGNAME="Tiger4NSC_3_oWriteValid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oWriteValid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oWriteReady" SIGIS="undef" SIGNAME="Tiger4NSC_3_iWriteReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iWriteReady"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="oReadData" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_iReadData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iReadData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oReadLast" SIGIS="undef" SIGNAME="Tiger4NSC_3_iReadLast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iReadLast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="oReadValid" SIGIS="undef" SIGNAME="Tiger4NSC_3_iReadValid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iReadValid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="iReadReady" SIGIS="undef" SIGNAME="Tiger4NSC_3_oReadReady">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="oReadReady"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="oReadyBusy" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_iReadyBusy">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iReadyBusy"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="IO_NAND_DQS_P" SIGIS="undef" SIGNAME="V2NFC100DDR_3_IO_NAND_DQS_P">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="IO_NAND_CH3_DQS_P"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" NAME="IO_NAND_DQS_N" SIGIS="undef" SIGNAME="V2NFC100DDR_3_IO_NAND_DQS_N">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="IO_NAND_CH3_DQS_N"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="IO" LEFT="7" NAME="IO_NAND_DQ" RIGHT="0" SIGIS="undef" SIGNAME="V2NFC100DDR_3_IO_NAND_DQ">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="IO_NAND_CH3_DQ"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="O_NAND_CE" RIGHT="0" SIGIS="undef" SIGNAME="V2NFC100DDR_3_O_NAND_CE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O_NAND_CH3_CE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="O_NAND_WE" SIGIS="undef" SIGNAME="V2NFC100DDR_3_O_NAND_WE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O_NAND_CH3_WE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="O_NAND_RE_P" SIGIS="undef" SIGNAME="V2NFC100DDR_3_O_NAND_RE_P">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O_NAND_CH3_RE_P"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="O_NAND_RE_N" SIGIS="undef" SIGNAME="V2NFC100DDR_3_O_NAND_RE_N">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O_NAND_CH3_RE_N"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="O_NAND_ALE" SIGIS="undef" SIGNAME="V2NFC100DDR_3_O_NAND_ALE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O_NAND_CH3_ALE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="O_NAND_CLE" SIGIS="undef" SIGNAME="V2NFC100DDR_3_O_NAND_CLE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O_NAND_CH3_CLE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="I_NAND_RB" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_I_NAND_CH3_RB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="I_NAND_CH3_RB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="O_NAND_WP" SIGIS="undef" SIGNAME="V2NFC100DDR_3_O_NAND_WP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="O_NAND_CH3_WP"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="Tiger4NSC_3_NFCInterface" NAME="NFCInterface" TYPE="TARGET">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="iOpcode"/>
+            <PORTMAP PHYSICAL="iTargetID"/>
+            <PORTMAP PHYSICAL="iSourceID"/>
+            <PORTMAP PHYSICAL="iAddress"/>
+            <PORTMAP PHYSICAL="iLength"/>
+            <PORTMAP PHYSICAL="iCMDValid"/>
+            <PORTMAP PHYSICAL="oCMDReady"/>
+            <PORTMAP PHYSICAL="iWriteData"/>
+            <PORTMAP PHYSICAL="iWriteLast"/>
+            <PORTMAP PHYSICAL="iWriteValid"/>
+            <PORTMAP PHYSICAL="oWriteReady"/>
+            <PORTMAP PHYSICAL="oReadData"/>
+            <PORTMAP PHYSICAL="oReadLast"/>
+            <PORTMAP PHYSICAL="oReadValid"/>
+            <PORTMAP PHYSICAL="iReadReady"/>
+            <PORTMAP PHYSICAL="oReadyBusy"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
     <MODULE FULLNAME="/axi_interconnect_0" HWVERSION="2.1" INSTANCE="axi_interconnect_0" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axi_interconnect" VLNV="xilinx.com:ip:axi_interconnect:2.1">
       <DOCUMENTS>
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_interconnect;v=v2_1;d=pg059-axi-interconnect.pdf"/>
       </DOCUMENTS>
       <PARAMETERS>
-        <PARAMETER NAME="NUM_SI" VALUE="2"/>
+        <PARAMETER NAME="NUM_SI" VALUE="4"/>
         <PARAMETER NAME="NUM_MI" VALUE="1"/>
         <PARAMETER NAME="STRATEGY" VALUE="2"/>
         <PARAMETER NAME="ENABLE_ADVANCED_OPTIONS" VALUE="1"/>
@@ -6239,12 +9108,12 @@
             <CONNECTION INSTANCE="PS" PORT="S_AXI_HP0_RRESP"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_bid" RIGHT="0" SIGIS="undef" SIGNAME="PS_S_AXI_HP0_BID">
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bid" RIGHT="0" SIGIS="undef" SIGNAME="PS_S_AXI_HP0_BID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="PS" PORT="S_AXI_HP0_BID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_rid" RIGHT="0" SIGIS="undef" SIGNAME="PS_S_AXI_HP0_RID">
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rid" RIGHT="0" SIGIS="undef" SIGNAME="PS_S_AXI_HP0_RID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="PS" PORT="S_AXI_HP0_RID"/>
           </CONNECTIONS>
@@ -6364,17 +9233,17 @@
             <CONNECTION INSTANCE="PS" PORT="S_AXI_HP0_AWQOS"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_arid" RIGHT="0" SIGIS="undef" SIGNAME="PS_S_AXI_HP0_ARID">
+        <PORT DIR="O" LEFT="1" NAME="M00_AXI_arid" RIGHT="0" SIGIS="undef" SIGNAME="PS_S_AXI_HP0_ARID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="PS" PORT="S_AXI_HP0_ARID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_awid" RIGHT="0" SIGIS="undef" SIGNAME="PS_S_AXI_HP0_AWID">
+        <PORT DIR="O" LEFT="1" NAME="M00_AXI_awid" RIGHT="0" SIGIS="undef" SIGNAME="PS_S_AXI_HP0_AWID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="PS" PORT="S_AXI_HP0_AWID"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_wid" RIGHT="0" SIGIS="undef" SIGNAME="PS_S_AXI_HP0_WID">
+        <PORT DIR="O" LEFT="1" NAME="M00_AXI_wid" RIGHT="0" SIGIS="undef" SIGNAME="PS_S_AXI_HP0_WID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="PS" PORT="S_AXI_HP0_WID"/>
           </CONNECTIONS>
@@ -6387,6 +9256,328 @@
         <PORT DIR="O" LEFT="7" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="PS_S_AXI_HP0_WSTRB">
           <CONNECTIONS>
             <CONNECTION INSTANCE="PS" PORT="S_AXI_HP0_WSTRB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="S02_ACLK" SIGIS="clk" SIGNAME="PS_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_clockc_0" PORT="FCLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S02_ARESETN" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="S03_ACLK" SIGIS="clk" SIGNAME="PS_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps7_clockc_0" PORT="FCLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="S03_ARESETN" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="proc_sys_reset_0" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S02_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_AWADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="S02_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_AWLEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S02_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_AWSIZE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S02_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_AWBURST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S02_AXI_awlock" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="S02_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_AWCACHE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S02_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_AWPROT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S02_AXI_awregion" SIGIS="undef"/>
+        <PORT DIR="I" NAME="S02_AXI_awqos" SIGIS="undef"/>
+        <PORT DIR="I" NAME="S02_AXI_awvalid" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_AWVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S02_AXI_awready" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_AWREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_AWREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S02_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_WDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_WDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S02_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_WSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_WSTRB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S02_AXI_wlast" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_WLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_WLAST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S02_AXI_wvalid" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_WVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_WVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S02_AXI_wready" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_WREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_WREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S02_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_BRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_BRESP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S02_AXI_bvalid" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_BVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_BVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S02_AXI_bready" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_BREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_BREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S02_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_ARADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="S02_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_ARLEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S02_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_ARSIZE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S02_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_ARBURST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S02_AXI_arlock" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="S02_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_ARCACHE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S02_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_ARPROT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S02_AXI_arregion" SIGIS="undef"/>
+        <PORT DIR="I" NAME="S02_AXI_arqos" SIGIS="undef"/>
+        <PORT DIR="I" NAME="S02_AXI_arvalid" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_ARVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S02_AXI_arready" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_ARREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_ARREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="S02_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_RDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_RDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S02_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_RRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_RRESP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S02_AXI_rlast" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_RLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_RLAST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S02_AXI_rvalid" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_RVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_RVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S02_AXI_rready" SIGIS="undef" SIGNAME="Tiger4NSC_2_D_RREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="D_RREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S03_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_AWADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="S03_AXI_awlen" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_AWLEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S03_AXI_awsize" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_AWSIZE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S03_AXI_awburst" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_AWBURST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S03_AXI_awlock" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="S03_AXI_awcache" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_AWCACHE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S03_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_AWPROT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S03_AXI_awregion" SIGIS="undef"/>
+        <PORT DIR="I" NAME="S03_AXI_awqos" SIGIS="undef"/>
+        <PORT DIR="I" NAME="S03_AXI_awvalid" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_AWVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S03_AXI_awready" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_AWREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_AWREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S03_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_WDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_WDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S03_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_WSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_WSTRB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S03_AXI_wlast" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_WLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_WLAST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S03_AXI_wvalid" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_WVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_WVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S03_AXI_wready" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_WREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_WREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S03_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_BRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_BRESP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S03_AXI_bvalid" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_BVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_BVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S03_AXI_bready" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_BREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_BREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S03_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_ARADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="S03_AXI_arlen" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARLEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_ARLEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S03_AXI_arsize" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARSIZE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_ARSIZE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S03_AXI_arburst" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARBURST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_ARBURST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S03_AXI_arlock" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="S03_AXI_arcache" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARCACHE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_ARCACHE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S03_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_ARPROT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S03_AXI_arregion" SIGIS="undef"/>
+        <PORT DIR="I" NAME="S03_AXI_arqos" SIGIS="undef"/>
+        <PORT DIR="I" NAME="S03_AXI_arvalid" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_ARVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S03_AXI_arready" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_ARREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_ARREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="S03_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_RDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_RDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S03_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_RRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_RRESP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S03_AXI_rlast" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_RLAST">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_RLAST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S03_AXI_rvalid" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_RVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_RVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S03_AXI_rready" SIGIS="undef" SIGNAME="Tiger4NSC_3_D_RREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="D_RREADY"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -6499,6 +9690,84 @@
             <PORTMAP PHYSICAL="S01_AXI_rready"/>
           </PORTMAPS>
         </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="Tiger4NSC_2_D_AXI" NAME="S02_AXI" TYPE="SLAVE">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="S02_AXI_awaddr"/>
+            <PORTMAP PHYSICAL="S02_AXI_awlen"/>
+            <PORTMAP PHYSICAL="S02_AXI_awsize"/>
+            <PORTMAP PHYSICAL="S02_AXI_awburst"/>
+            <PORTMAP PHYSICAL="S02_AXI_awlock"/>
+            <PORTMAP PHYSICAL="S02_AXI_awcache"/>
+            <PORTMAP PHYSICAL="S02_AXI_awprot"/>
+            <PORTMAP PHYSICAL="S02_AXI_awregion"/>
+            <PORTMAP PHYSICAL="S02_AXI_awqos"/>
+            <PORTMAP PHYSICAL="S02_AXI_awvalid"/>
+            <PORTMAP PHYSICAL="S02_AXI_awready"/>
+            <PORTMAP PHYSICAL="S02_AXI_wdata"/>
+            <PORTMAP PHYSICAL="S02_AXI_wstrb"/>
+            <PORTMAP PHYSICAL="S02_AXI_wlast"/>
+            <PORTMAP PHYSICAL="S02_AXI_wvalid"/>
+            <PORTMAP PHYSICAL="S02_AXI_wready"/>
+            <PORTMAP PHYSICAL="S02_AXI_bresp"/>
+            <PORTMAP PHYSICAL="S02_AXI_bvalid"/>
+            <PORTMAP PHYSICAL="S02_AXI_bready"/>
+            <PORTMAP PHYSICAL="S02_AXI_araddr"/>
+            <PORTMAP PHYSICAL="S02_AXI_arlen"/>
+            <PORTMAP PHYSICAL="S02_AXI_arsize"/>
+            <PORTMAP PHYSICAL="S02_AXI_arburst"/>
+            <PORTMAP PHYSICAL="S02_AXI_arlock"/>
+            <PORTMAP PHYSICAL="S02_AXI_arcache"/>
+            <PORTMAP PHYSICAL="S02_AXI_arprot"/>
+            <PORTMAP PHYSICAL="S02_AXI_arregion"/>
+            <PORTMAP PHYSICAL="S02_AXI_arqos"/>
+            <PORTMAP PHYSICAL="S02_AXI_arvalid"/>
+            <PORTMAP PHYSICAL="S02_AXI_arready"/>
+            <PORTMAP PHYSICAL="S02_AXI_rdata"/>
+            <PORTMAP PHYSICAL="S02_AXI_rresp"/>
+            <PORTMAP PHYSICAL="S02_AXI_rlast"/>
+            <PORTMAP PHYSICAL="S02_AXI_rvalid"/>
+            <PORTMAP PHYSICAL="S02_AXI_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="Tiger4NSC_3_D_AXI" NAME="S03_AXI" TYPE="SLAVE">
+          <PORTMAPS>
+            <PORTMAP PHYSICAL="S03_AXI_awaddr"/>
+            <PORTMAP PHYSICAL="S03_AXI_awlen"/>
+            <PORTMAP PHYSICAL="S03_AXI_awsize"/>
+            <PORTMAP PHYSICAL="S03_AXI_awburst"/>
+            <PORTMAP PHYSICAL="S03_AXI_awlock"/>
+            <PORTMAP PHYSICAL="S03_AXI_awcache"/>
+            <PORTMAP PHYSICAL="S03_AXI_awprot"/>
+            <PORTMAP PHYSICAL="S03_AXI_awregion"/>
+            <PORTMAP PHYSICAL="S03_AXI_awqos"/>
+            <PORTMAP PHYSICAL="S03_AXI_awvalid"/>
+            <PORTMAP PHYSICAL="S03_AXI_awready"/>
+            <PORTMAP PHYSICAL="S03_AXI_wdata"/>
+            <PORTMAP PHYSICAL="S03_AXI_wstrb"/>
+            <PORTMAP PHYSICAL="S03_AXI_wlast"/>
+            <PORTMAP PHYSICAL="S03_AXI_wvalid"/>
+            <PORTMAP PHYSICAL="S03_AXI_wready"/>
+            <PORTMAP PHYSICAL="S03_AXI_bresp"/>
+            <PORTMAP PHYSICAL="S03_AXI_bvalid"/>
+            <PORTMAP PHYSICAL="S03_AXI_bready"/>
+            <PORTMAP PHYSICAL="S03_AXI_araddr"/>
+            <PORTMAP PHYSICAL="S03_AXI_arlen"/>
+            <PORTMAP PHYSICAL="S03_AXI_arsize"/>
+            <PORTMAP PHYSICAL="S03_AXI_arburst"/>
+            <PORTMAP PHYSICAL="S03_AXI_arlock"/>
+            <PORTMAP PHYSICAL="S03_AXI_arcache"/>
+            <PORTMAP PHYSICAL="S03_AXI_arprot"/>
+            <PORTMAP PHYSICAL="S03_AXI_arregion"/>
+            <PORTMAP PHYSICAL="S03_AXI_arqos"/>
+            <PORTMAP PHYSICAL="S03_AXI_arvalid"/>
+            <PORTMAP PHYSICAL="S03_AXI_arready"/>
+            <PORTMAP PHYSICAL="S03_AXI_rdata"/>
+            <PORTMAP PHYSICAL="S03_AXI_rresp"/>
+            <PORTMAP PHYSICAL="S03_AXI_rlast"/>
+            <PORTMAP PHYSICAL="S03_AXI_rvalid"/>
+            <PORTMAP PHYSICAL="S03_AXI_rready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
     <MODULE FULLNAME="/proc_sys_reset_0" HWVERSION="5.0" INSTANCE="proc_sys_reset_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="proc_sys_reset" VLNV="xilinx.com:ip:proc_sys_reset:5.0">
@@ -6538,12 +9807,16 @@
         <PORT DIR="O" LEFT="0" NAME="bus_struct_reset" RIGHT="0" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="peripheral_reset" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_peripheral_reset">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="V2NFC100DDR_0" PORT="iReset"/>
-            <CONNECTION INSTANCE="V2NFC100DDR_1" PORT="iReset"/>
             <CONNECTION INSTANCE="CH0MMCMC1H200" PORT="reset"/>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="iReset"/>
             <CONNECTION INSTANCE="Tiger4NSC_0" PORT="iReset"/>
             <CONNECTION INSTANCE="Tiger4NSC_1" PORT="iReset"/>
-            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="iReset"/>
+            <CONNECTION INSTANCE="V2NFC100DDR_0" PORT="iReset"/>
+            <CONNECTION INSTANCE="V2NFC100DDR_1" PORT="iReset"/>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iReset"/>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="iReset"/>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iReset"/>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="iReset"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_0_interconnect_aresetn">
@@ -6558,6 +9831,12 @@
             <CONNECTION INSTANCE="GPIC0" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="S01_ARESETN"/>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_aresetn"/>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_ARESETN"/>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_ARESETN"/>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_ARESETN"/>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_ARESETN"/>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_ARESETN"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -6606,9 +9885,9 @@
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_2_peripheral_aresetn">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="NVMeHostController_0" PORT="s0_axi_aresetn"/>
             <CONNECTION INSTANCE="GPIC1" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="GPIC1" PORT="M00_ARESETN"/>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="s0_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -6658,10 +9937,10 @@
         </PORT>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="proc_sys_reset_3_peripheral_aresetn">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m0_axi_aresetn"/>
             <CONNECTION INSTANCE="HPIC3" PORT="M00_ARESETN"/>
             <CONNECTION INSTANCE="HPIC3" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M00_ARESETN"/>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m0_axi_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -6694,10 +9973,9 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="ps7_dev_cfg_0" PORT="FCLK0"/>
             <CONNECTION INSTANCE="proc_sys_reset_0" PORT="slowest_sync_clk"/>
-            <CONNECTION INSTANCE="V2NFC100DDR_0" PORT="iSystemClock"/>
-            <CONNECTION INSTANCE="V2NFC100DDR_1" PORT="iSystemClock"/>
             <CONNECTION INSTANCE="CH0MMCMC1H200" PORT="clk_in1"/>
             <CONNECTION INSTANCE="PS" PORT="M_AXI_GP0_ACLK"/>
+            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="iClock"/>
             <CONNECTION INSTANCE="GPIC0" PORT="M00_ACLK"/>
             <CONNECTION INSTANCE="GPIC0" PORT="M01_ACLK"/>
             <CONNECTION INSTANCE="GPIC0" PORT="ACLK"/>
@@ -6706,7 +9984,18 @@
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="S01_ACLK"/>
             <CONNECTION INSTANCE="Tiger4NSC_0" PORT="iClock"/>
             <CONNECTION INSTANCE="Tiger4NSC_1" PORT="iClock"/>
-            <CONNECTION INSTANCE="Tiger4SharedKES_0" PORT="iClock"/>
+            <CONNECTION INSTANCE="V2NFC100DDR_0" PORT="iSystemClock"/>
+            <CONNECTION INSTANCE="V2NFC100DDR_1" PORT="iSystemClock"/>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m1_axi_aclk"/>
+            <CONNECTION INSTANCE="GPIC0" PORT="S01_ACLK"/>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S02_ACLK"/>
+            <CONNECTION INSTANCE="axi_interconnect_0" PORT="S03_ACLK"/>
+            <CONNECTION INSTANCE="GPIC0" PORT="M02_ACLK"/>
+            <CONNECTION INSTANCE="GPIC0" PORT="M03_ACLK"/>
+            <CONNECTION INSTANCE="Tiger4NSC_2" PORT="iClock"/>
+            <CONNECTION INSTANCE="V2NFC100DDR_2" PORT="iSystemClock"/>
+            <CONNECTION INSTANCE="Tiger4NSC_3" PORT="iClock"/>
+            <CONNECTION INSTANCE="V2NFC100DDR_3" PORT="iSystemClock"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="FCLK1" SIGIS="CLK" SIGNAME="ps7_clockc_0_FCLK1">
@@ -6719,10 +10008,10 @@
             <CONNECTION INSTANCE="ps7_dev_cfg_0" PORT="FCLK2"/>
             <CONNECTION INSTANCE="proc_sys_reset_2" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="PS" PORT="M_AXI_GP1_ACLK"/>
-            <CONNECTION INSTANCE="NVMeHostController_0" PORT="s0_axi_aclk"/>
             <CONNECTION INSTANCE="GPIC1" PORT="ACLK"/>
             <CONNECTION INSTANCE="GPIC1" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="GPIC1" PORT="M00_ACLK"/>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="s0_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="250000000" DIR="O" NAME="FCLK3" SIGIS="CLK" SIGNAME="PS_FCLK_CLK3">
@@ -6731,12 +10020,12 @@
             <CONNECTION INSTANCE="proc_sys_reset_3" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="PS" PORT="S_AXI_HP0_ACLK"/>
             <CONNECTION INSTANCE="PS" PORT="S_AXI_HP3_ACLK"/>
-            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m0_axi_aclk"/>
             <CONNECTION INSTANCE="HPIC3" PORT="ACLK"/>
             <CONNECTION INSTANCE="HPIC3" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="HPIC3" PORT="M00_ACLK"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="ACLK"/>
             <CONNECTION INSTANCE="axi_interconnect_0" PORT="M00_ACLK"/>
+            <CONNECTION INSTANCE="NVMeHostController_0" PORT="m0_axi_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="25000000" DIR="O" NAME="GEM0" SIGIS="CLK" SIGNAME="ps7_clockc_0_GEM0">
@@ -8996,6 +12285,8 @@
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00100000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x3FFFFFFF" INSTANCE="ps7_ddr_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
         <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C0FFFF" INSTANCE="Tiger4NSC_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C10000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C1FFFF" INSTANCE="Tiger4NSC_1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
+        <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C20000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C2FFFF" INSTANCE="Tiger4NSC_2" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
+        <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C30000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C3FFFF" INSTANCE="Tiger4NSC_3" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x83C00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x83C0FFFF" INSTANCE="NVMeHostController_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0001000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0001FFF" INSTANCE="ps7_uart_1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0002000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0002FFF" INSTANCE="ps7_usb_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
@@ -9037,6 +12328,8 @@
         <PERIPHERAL INSTANCE="ps7_ddr_0"/>
         <PERIPHERAL INSTANCE="Tiger4NSC_0"/>
         <PERIPHERAL INSTANCE="Tiger4NSC_1"/>
+        <PERIPHERAL INSTANCE="Tiger4NSC_2"/>
+        <PERIPHERAL INSTANCE="Tiger4NSC_3"/>
         <PERIPHERAL INSTANCE="NVMeHostController_0"/>
         <PERIPHERAL INSTANCE="ps7_uart_1"/>
         <PERIPHERAL INSTANCE="ps7_usb_0"/>
@@ -9229,6 +12522,8 @@
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0x00100000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0x3FFFFFFF" INSTANCE="ps7_ddr_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="MEMORY"/>
         <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C0FFFF" INSTANCE="Tiger4NSC_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C10000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C1FFFF" INSTANCE="Tiger4NSC_1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
+        <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C20000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C2FFFF" INSTANCE="Tiger4NSC_2" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
+        <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x43C30000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x43C3FFFF" INSTANCE="Tiger4NSC_3" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE ADDRESSBLOCK="reg0" BASENAME="C_BASEADDR" BASEVALUE="0x83C00000" HIGHNAME="C_HIGHADDR" HIGHVALUE="0x83C0FFFF" INSTANCE="NVMeHostController_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0001000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0001FFF" INSTANCE="ps7_uart_1" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
         <MEMRANGE BASENAME="C_S_AXI_BASEADDR" BASEVALUE="0xE0002000" HIGHNAME="C_S_AXI_HIGHADDR" HIGHVALUE="0xE0002FFF" INSTANCE="ps7_usb_0" IS_DATA="TRUE" IS_INSTRUCTION="TRUE" MEMTYPE="REGISTER"/>
@@ -9270,6 +12565,8 @@
         <PERIPHERAL INSTANCE="ps7_ddr_0"/>
         <PERIPHERAL INSTANCE="Tiger4NSC_0"/>
         <PERIPHERAL INSTANCE="Tiger4NSC_1"/>
+        <PERIPHERAL INSTANCE="Tiger4NSC_2"/>
+        <PERIPHERAL INSTANCE="Tiger4NSC_3"/>
         <PERIPHERAL INSTANCE="NVMeHostController_0"/>
         <PERIPHERAL INSTANCE="ps7_uart_1"/>
         <PERIPHERAL INSTANCE="ps7_usb_0"/>

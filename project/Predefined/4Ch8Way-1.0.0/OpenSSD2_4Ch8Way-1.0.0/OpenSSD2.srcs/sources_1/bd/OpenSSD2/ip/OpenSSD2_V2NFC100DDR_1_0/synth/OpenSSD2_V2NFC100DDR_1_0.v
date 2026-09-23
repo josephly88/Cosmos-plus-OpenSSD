@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2017 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2026 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -50,7 +50,7 @@
 // IP VLNV: ENCLab:ip:V2NFC100DDR:1.0.0
 // IP Revision: 2
 
-(* X_CORE_INFO = "NFC_Toggle_Top_DDR100,Vivado 2014.4.1" *)
+(* X_CORE_INFO = "NFC_Toggle_Top_DDR100,Vivado 2014.4" *)
 (* CHECK_LICENSE_TYPE = "OpenSSD2_V2NFC100DDR_1_0,NFC_Toggle_Top_DDR100,{}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module OpenSSD2_V2NFC100DDR_1_0 (

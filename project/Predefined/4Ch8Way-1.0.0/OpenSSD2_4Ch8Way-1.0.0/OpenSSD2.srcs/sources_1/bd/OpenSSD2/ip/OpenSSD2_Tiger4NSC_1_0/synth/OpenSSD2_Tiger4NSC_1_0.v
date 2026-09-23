@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2017 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2026 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -50,7 +50,7 @@
 // IP VLNV: ENCLab:ip:Tiger4NSC:1.2.5
 // IP Revision: 1
 
-(* X_CORE_INFO = "FMCTop,Vivado 2014.4.1" *)
+(* X_CORE_INFO = "FMCTop,Vivado 2014.4" *)
 (* CHECK_LICENSE_TYPE = "OpenSSD2_Tiger4NSC_1_0,FMCTop,{}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module OpenSSD2_Tiger4NSC_1_0 (

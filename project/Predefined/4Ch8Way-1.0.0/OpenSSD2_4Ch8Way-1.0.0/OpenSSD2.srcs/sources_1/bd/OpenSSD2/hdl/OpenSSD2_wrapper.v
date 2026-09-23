@@ -1,8 +1,8 @@
 //Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2014.4.1 (win64) Build 1149489 Thu Feb 19 16:23:09 MST 2015
-//Date        : Fri Nov 10 02:35:34 2017
-//Host        : aCentauri running 64-bit Service Pack 1  (build 7601)
+//Tool Version: Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+//Date        : Wed Sep 23 21:45:38 2026
+//Host        : PC89136 running 64-bit major release  (build 9200)
 //Command     : generate_target OpenSSD2_wrapper.bd
 //Design      : OpenSSD2_wrapper
 //Purpose     : IP block netlist
@@ -37,8 +37,16 @@ module OpenSSD2_wrapper
     IO_NAND_CH1_DQ,
     IO_NAND_CH1_DQS_N,
     IO_NAND_CH1_DQS_P,
+    IO_NAND_CH2_DQ,
+    IO_NAND_CH2_DQS_N,
+    IO_NAND_CH2_DQS_P,
+    IO_NAND_CH3_DQ,
+    IO_NAND_CH3_DQS_N,
+    IO_NAND_CH3_DQS_P,
     I_NAND_CH0_RB,
     I_NAND_CH1_RB,
+    I_NAND_CH2_RB,
+    I_NAND_CH3_RB,
     O_DEBUG,
     O_NAND_CH0_ALE,
     O_NAND_CH0_CE,
@@ -54,6 +62,20 @@ module OpenSSD2_wrapper
     O_NAND_CH1_RE_P,
     O_NAND_CH1_WE,
     O_NAND_CH1_WP,
+    O_NAND_CH2_ALE,
+    O_NAND_CH2_CE,
+    O_NAND_CH2_CLE,
+    O_NAND_CH2_RE_N,
+    O_NAND_CH2_RE_P,
+    O_NAND_CH2_WE,
+    O_NAND_CH2_WP,
+    O_NAND_CH3_ALE,
+    O_NAND_CH3_CE,
+    O_NAND_CH3_CLE,
+    O_NAND_CH3_RE_N,
+    O_NAND_CH3_RE_P,
+    O_NAND_CH3_WE,
+    O_NAND_CH3_WP,
     pcie_perst_n,
     pcie_ref_clk_n,
     pcie_ref_clk_p,
@@ -88,8 +110,16 @@ module OpenSSD2_wrapper
   inout [7:0]IO_NAND_CH1_DQ;
   inout IO_NAND_CH1_DQS_N;
   inout IO_NAND_CH1_DQS_P;
+  inout [7:0]IO_NAND_CH2_DQ;
+  inout IO_NAND_CH2_DQS_N;
+  inout IO_NAND_CH2_DQS_P;
+  inout [7:0]IO_NAND_CH3_DQ;
+  inout IO_NAND_CH3_DQS_N;
+  inout IO_NAND_CH3_DQS_P;
   input [7:0]I_NAND_CH0_RB;
   input [7:0]I_NAND_CH1_RB;
+  input [7:0]I_NAND_CH2_RB;
+  input [7:0]I_NAND_CH3_RB;
   output [31:0]O_DEBUG;
   output O_NAND_CH0_ALE;
   output [7:0]O_NAND_CH0_CE;
@@ -105,6 +135,20 @@ module OpenSSD2_wrapper
   output O_NAND_CH1_RE_P;
   output O_NAND_CH1_WE;
   output O_NAND_CH1_WP;
+  output O_NAND_CH2_ALE;
+  output [7:0]O_NAND_CH2_CE;
+  output O_NAND_CH2_CLE;
+  output O_NAND_CH2_RE_N;
+  output O_NAND_CH2_RE_P;
+  output O_NAND_CH2_WE;
+  output O_NAND_CH2_WP;
+  output O_NAND_CH3_ALE;
+  output [7:0]O_NAND_CH3_CE;
+  output O_NAND_CH3_CLE;
+  output O_NAND_CH3_RE_N;
+  output O_NAND_CH3_RE_P;
+  output O_NAND_CH3_WE;
+  output O_NAND_CH3_WP;
   input pcie_perst_n;
   input pcie_ref_clk_n;
   input pcie_ref_clk_p;
@@ -140,8 +184,16 @@ module OpenSSD2_wrapper
   wire [7:0]IO_NAND_CH1_DQ;
   wire IO_NAND_CH1_DQS_N;
   wire IO_NAND_CH1_DQS_P;
+  wire [7:0]IO_NAND_CH2_DQ;
+  wire IO_NAND_CH2_DQS_N;
+  wire IO_NAND_CH2_DQS_P;
+  wire [7:0]IO_NAND_CH3_DQ;
+  wire IO_NAND_CH3_DQS_N;
+  wire IO_NAND_CH3_DQS_P;
   wire [7:0]I_NAND_CH0_RB;
   wire [7:0]I_NAND_CH1_RB;
+  wire [7:0]I_NAND_CH2_RB;
+  wire [7:0]I_NAND_CH3_RB;
   wire [31:0]O_DEBUG;
   wire O_NAND_CH0_ALE;
   wire [7:0]O_NAND_CH0_CE;
@@ -157,6 +209,20 @@ module OpenSSD2_wrapper
   wire O_NAND_CH1_RE_P;
   wire O_NAND_CH1_WE;
   wire O_NAND_CH1_WP;
+  wire O_NAND_CH2_ALE;
+  wire [7:0]O_NAND_CH2_CE;
+  wire O_NAND_CH2_CLE;
+  wire O_NAND_CH2_RE_N;
+  wire O_NAND_CH2_RE_P;
+  wire O_NAND_CH2_WE;
+  wire O_NAND_CH2_WP;
+  wire O_NAND_CH3_ALE;
+  wire [7:0]O_NAND_CH3_CE;
+  wire O_NAND_CH3_CLE;
+  wire O_NAND_CH3_RE_N;
+  wire O_NAND_CH3_RE_P;
+  wire O_NAND_CH3_WE;
+  wire O_NAND_CH3_WP;
   wire pcie_perst_n;
   wire pcie_ref_clk_n;
   wire pcie_ref_clk_p;
@@ -193,8 +259,16 @@ OpenSSD2 OpenSSD2_i
         .IO_NAND_CH1_DQ(IO_NAND_CH1_DQ),
         .IO_NAND_CH1_DQS_N(IO_NAND_CH1_DQS_N),
         .IO_NAND_CH1_DQS_P(IO_NAND_CH1_DQS_P),
+        .IO_NAND_CH2_DQ(IO_NAND_CH2_DQ),
+        .IO_NAND_CH2_DQS_N(IO_NAND_CH2_DQS_N),
+        .IO_NAND_CH2_DQS_P(IO_NAND_CH2_DQS_P),
+        .IO_NAND_CH3_DQ(IO_NAND_CH3_DQ),
+        .IO_NAND_CH3_DQS_N(IO_NAND_CH3_DQS_N),
+        .IO_NAND_CH3_DQS_P(IO_NAND_CH3_DQS_P),
         .I_NAND_CH0_RB(I_NAND_CH0_RB),
         .I_NAND_CH1_RB(I_NAND_CH1_RB),
+        .I_NAND_CH2_RB(I_NAND_CH2_RB),
+        .I_NAND_CH3_RB(I_NAND_CH3_RB),
         .O_DEBUG(O_DEBUG),
         .O_NAND_CH0_ALE(O_NAND_CH0_ALE),
         .O_NAND_CH0_CE(O_NAND_CH0_CE),
@@ -210,6 +284,20 @@ OpenSSD2 OpenSSD2_i
         .O_NAND_CH1_RE_P(O_NAND_CH1_RE_P),
         .O_NAND_CH1_WE(O_NAND_CH1_WE),
         .O_NAND_CH1_WP(O_NAND_CH1_WP),
+        .O_NAND_CH2_ALE(O_NAND_CH2_ALE),
+        .O_NAND_CH2_CE(O_NAND_CH2_CE),
+        .O_NAND_CH2_CLE(O_NAND_CH2_CLE),
+        .O_NAND_CH2_RE_N(O_NAND_CH2_RE_N),
+        .O_NAND_CH2_RE_P(O_NAND_CH2_RE_P),
+        .O_NAND_CH2_WE(O_NAND_CH2_WE),
+        .O_NAND_CH2_WP(O_NAND_CH2_WP),
+        .O_NAND_CH3_ALE(O_NAND_CH3_ALE),
+        .O_NAND_CH3_CE(O_NAND_CH3_CE),
+        .O_NAND_CH3_CLE(O_NAND_CH3_CLE),
+        .O_NAND_CH3_RE_N(O_NAND_CH3_RE_N),
+        .O_NAND_CH3_RE_P(O_NAND_CH3_RE_P),
+        .O_NAND_CH3_WE(O_NAND_CH3_WE),
+        .O_NAND_CH3_WP(O_NAND_CH3_WP),
         .pcie_perst_n(pcie_perst_n),
         .pcie_ref_clk_n(pcie_ref_clk_n),
         .pcie_ref_clk_p(pcie_ref_clk_p),

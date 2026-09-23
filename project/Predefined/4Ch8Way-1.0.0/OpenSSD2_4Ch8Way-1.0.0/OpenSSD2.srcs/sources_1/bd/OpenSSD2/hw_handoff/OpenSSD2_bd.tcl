@@ -153,8 +153,16 @@ proc create_root_design { parentCell } {
   set IO_NAND_CH1_DQ [ create_bd_port -dir IO -from 7 -to 0 IO_NAND_CH1_DQ ]
   set IO_NAND_CH1_DQS_N [ create_bd_port -dir IO IO_NAND_CH1_DQS_N ]
   set IO_NAND_CH1_DQS_P [ create_bd_port -dir IO IO_NAND_CH1_DQS_P ]
+  set IO_NAND_CH2_DQ [ create_bd_port -dir IO -from 7 -to 0 IO_NAND_CH2_DQ ]
+  set IO_NAND_CH2_DQS_N [ create_bd_port -dir IO IO_NAND_CH2_DQS_N ]
+  set IO_NAND_CH2_DQS_P [ create_bd_port -dir IO IO_NAND_CH2_DQS_P ]
+  set IO_NAND_CH3_DQ [ create_bd_port -dir IO -from 7 -to 0 IO_NAND_CH3_DQ ]
+  set IO_NAND_CH3_DQS_N [ create_bd_port -dir IO IO_NAND_CH3_DQS_N ]
+  set IO_NAND_CH3_DQS_P [ create_bd_port -dir IO IO_NAND_CH3_DQS_P ]
   set I_NAND_CH0_RB [ create_bd_port -dir I -from 7 -to 0 I_NAND_CH0_RB ]
   set I_NAND_CH1_RB [ create_bd_port -dir I -from 7 -to 0 I_NAND_CH1_RB ]
+  set I_NAND_CH2_RB [ create_bd_port -dir I -from 7 -to 0 I_NAND_CH2_RB ]
+  set I_NAND_CH3_RB [ create_bd_port -dir I -from 7 -to 0 I_NAND_CH3_RB ]
   set O_DEBUG [ create_bd_port -dir O -from 31 -to 0 O_DEBUG ]
   set O_NAND_CH0_ALE [ create_bd_port -dir O O_NAND_CH0_ALE ]
   set O_NAND_CH0_CE [ create_bd_port -dir O -from 7 -to 0 O_NAND_CH0_CE ]
@@ -170,6 +178,20 @@ proc create_root_design { parentCell } {
   set O_NAND_CH1_RE_P [ create_bd_port -dir O O_NAND_CH1_RE_P ]
   set O_NAND_CH1_WE [ create_bd_port -dir O O_NAND_CH1_WE ]
   set O_NAND_CH1_WP [ create_bd_port -dir O O_NAND_CH1_WP ]
+  set O_NAND_CH2_ALE [ create_bd_port -dir O O_NAND_CH2_ALE ]
+  set O_NAND_CH2_CE [ create_bd_port -dir O -from 7 -to 0 O_NAND_CH2_CE ]
+  set O_NAND_CH2_CLE [ create_bd_port -dir O O_NAND_CH2_CLE ]
+  set O_NAND_CH2_RE_N [ create_bd_port -dir O O_NAND_CH2_RE_N ]
+  set O_NAND_CH2_RE_P [ create_bd_port -dir O O_NAND_CH2_RE_P ]
+  set O_NAND_CH2_WE [ create_bd_port -dir O O_NAND_CH2_WE ]
+  set O_NAND_CH2_WP [ create_bd_port -dir O O_NAND_CH2_WP ]
+  set O_NAND_CH3_ALE [ create_bd_port -dir O O_NAND_CH3_ALE ]
+  set O_NAND_CH3_CE [ create_bd_port -dir O -from 7 -to 0 O_NAND_CH3_CE ]
+  set O_NAND_CH3_CLE [ create_bd_port -dir O O_NAND_CH3_CLE ]
+  set O_NAND_CH3_RE_N [ create_bd_port -dir O O_NAND_CH3_RE_N ]
+  set O_NAND_CH3_RE_P [ create_bd_port -dir O O_NAND_CH3_RE_P ]
+  set O_NAND_CH3_WE [ create_bd_port -dir O O_NAND_CH3_WE ]
+  set O_NAND_CH3_WP [ create_bd_port -dir O O_NAND_CH3_WP ]
   set pcie_perst_n [ create_bd_port -dir I pcie_perst_n ]
   set pcie_ref_clk_n [ create_bd_port -dir I pcie_ref_clk_n ]
   set pcie_ref_clk_p [ create_bd_port -dir I pcie_ref_clk_p ]
@@ -184,15 +206,23 @@ proc create_root_design { parentCell } {
 
   # Create instance: Dispatcher_uCode_0, and set properties
   set Dispatcher_uCode_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.2 Dispatcher_uCode_0 ]
-  set_property -dict [ list CONFIG.Coe_File {../../../../uProgROM_v2.0.coe} CONFIG.Enable_32bit_Address {false} CONFIG.Load_Init_File {true} CONFIG.Read_Width_A {64} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Use_RSTA_Pin {true} CONFIG.Write_Depth_A {256} CONFIG.Write_Width_A {64} CONFIG.use_bram_block {Stand_Alone}  ] $Dispatcher_uCode_0
+  set_property -dict [ list CONFIG.Coe_File {no_coe_file_loaded} CONFIG.Enable_32bit_Address {false} CONFIG.Load_Init_File {false} CONFIG.Read_Width_A {64} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Use_RSTA_Pin {false} CONFIG.Write_Depth_A {8192} CONFIG.Write_Width_A {64} CONFIG.use_bram_block {Stand_Alone}  ] $Dispatcher_uCode_0
 
   # Create instance: Dispatcher_uCode_1, and set properties
   set Dispatcher_uCode_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.2 Dispatcher_uCode_1 ]
   set_property -dict [ list CONFIG.Coe_File {../../../../uProgROM_v2.0.coe} CONFIG.Enable_32bit_Address {false} CONFIG.Load_Init_File {true} CONFIG.Read_Width_A {64} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Use_RSTA_Pin {true} CONFIG.Write_Depth_A {256} CONFIG.Write_Width_A {64} CONFIG.use_bram_block {Stand_Alone}  ] $Dispatcher_uCode_1
 
+  # Create instance: Dispatcher_uCode_2, and set properties
+  set Dispatcher_uCode_2 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.2 Dispatcher_uCode_2 ]
+  set_property -dict [ list CONFIG.Coe_File {../../../../uProgROM_v2.0.coe} CONFIG.Enable_32bit_Address {false} CONFIG.Load_Init_File {true} CONFIG.Read_Width_A {64} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Use_RSTA_Pin {true} CONFIG.Write_Depth_A {256} CONFIG.Write_Width_A {64} CONFIG.use_bram_block {Stand_Alone}  ] $Dispatcher_uCode_2
+
+  # Create instance: Dispatcher_uCode_3, and set properties
+  set Dispatcher_uCode_3 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.2 Dispatcher_uCode_3 ]
+  set_property -dict [ list CONFIG.Coe_File {../../../../uProgROM_v2.0.coe} CONFIG.Enable_32bit_Address {false} CONFIG.Load_Init_File {true} CONFIG.Read_Width_A {64} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Use_RSTA_Pin {true} CONFIG.Write_Depth_A {256} CONFIG.Write_Width_A {64} CONFIG.use_bram_block {Stand_Alone}  ] $Dispatcher_uCode_3
+
   # Create instance: GPIC0, and set properties
   set GPIC0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 GPIC0 ]
-  set_property -dict [ list CONFIG.ENABLE_ADVANCED_OPTIONS {1} CONFIG.NUM_MI {2} CONFIG.S00_HAS_DATA_FIFO {0}  ] $GPIC0
+  set_property -dict [ list CONFIG.ENABLE_ADVANCED_OPTIONS {1} CONFIG.NUM_MI {4} CONFIG.NUM_SI {2} CONFIG.S00_HAS_DATA_FIFO {0}  ] $GPIC0
 
   # Create instance: GPIC1, and set properties
   set GPIC1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 GPIC1 ]
@@ -276,6 +306,12 @@ CONFIG.PCW_USE_S_AXI_HP3 {1}  ] $PS
   # Create instance: Tiger4NSC_1, and set properties
   set Tiger4NSC_1 [ create_bd_cell -type ip -vlnv ENCLab:ip:Tiger4NSC:1.2.5 Tiger4NSC_1 ]
 
+  # Create instance: Tiger4NSC_2, and set properties
+  set Tiger4NSC_2 [ create_bd_cell -type ip -vlnv ENCLab:ip:Tiger4NSC:1.2.5 Tiger4NSC_2 ]
+
+  # Create instance: Tiger4NSC_3, and set properties
+  set Tiger4NSC_3 [ create_bd_cell -type ip -vlnv ENCLab:ip:Tiger4NSC:1.2.5 Tiger4NSC_3 ]
+
   # Create instance: Tiger4SharedKES_0, and set properties
   set Tiger4SharedKES_0 [ create_bd_cell -type ip -vlnv ENCLab:ip:Tiger4SharedKES:1.0.1 Tiger4SharedKES_0 ]
 
@@ -285,9 +321,15 @@ CONFIG.PCW_USE_S_AXI_HP3 {1}  ] $PS
   # Create instance: V2NFC100DDR_1, and set properties
   set V2NFC100DDR_1 [ create_bd_cell -type ip -vlnv ENCLab:ip:V2NFC100DDR:1.0.0 V2NFC100DDR_1 ]
 
+  # Create instance: V2NFC100DDR_2, and set properties
+  set V2NFC100DDR_2 [ create_bd_cell -type ip -vlnv ENCLab:ip:V2NFC100DDR:1.0.0 V2NFC100DDR_2 ]
+
+  # Create instance: V2NFC100DDR_3, and set properties
+  set V2NFC100DDR_3 [ create_bd_cell -type ip -vlnv ENCLab:ip:V2NFC100DDR:1.0.0 V2NFC100DDR_3 ]
+
   # Create instance: axi_interconnect_0, and set properties
   set axi_interconnect_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0 ]
-  set_property -dict [ list CONFIG.ENABLE_ADVANCED_OPTIONS {1} CONFIG.M00_HAS_DATA_FIFO {2} CONFIG.M00_HAS_REGSLICE {1} CONFIG.M01_HAS_REGSLICE {1} CONFIG.NUM_MI {1} CONFIG.NUM_SI {2} CONFIG.S00_HAS_REGSLICE {1} CONFIG.S01_HAS_REGSLICE {1} CONFIG.S02_HAS_REGSLICE {1} CONFIG.S03_HAS_REGSLICE {1} CONFIG.STRATEGY {2}  ] $axi_interconnect_0
+  set_property -dict [ list CONFIG.ENABLE_ADVANCED_OPTIONS {1} CONFIG.M00_HAS_DATA_FIFO {2} CONFIG.M00_HAS_REGSLICE {1} CONFIG.M01_HAS_REGSLICE {1} CONFIG.NUM_MI {1} CONFIG.NUM_SI {4} CONFIG.S00_HAS_REGSLICE {1} CONFIG.S01_HAS_REGSLICE {1} CONFIG.S02_HAS_REGSLICE {1} CONFIG.S03_HAS_REGSLICE {1} CONFIG.STRATEGY {2}  ] $axi_interconnect_0
 
   # Create instance: proc_sys_reset_0, and set properties
   set proc_sys_reset_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0 ]
@@ -301,12 +343,17 @@ CONFIG.PCW_USE_S_AXI_HP3 {1}  ] $PS
   # Create interface connections
   connect_bd_intf_net -intf_net GPIC0_M00_AXI [get_bd_intf_pins GPIC0/M00_AXI] [get_bd_intf_pins Tiger4NSC_0/C_AXI]
   connect_bd_intf_net -intf_net GPIC0_M01_AXI [get_bd_intf_pins GPIC0/M01_AXI] [get_bd_intf_pins Tiger4NSC_1/C_AXI]
+  connect_bd_intf_net -intf_net GPIC0_M02_AXI [get_bd_intf_pins GPIC0/M02_AXI] [get_bd_intf_pins Tiger4NSC_2/C_AXI]
+  connect_bd_intf_net -intf_net GPIC0_M03_AXI [get_bd_intf_pins GPIC0/M03_AXI] [get_bd_intf_pins Tiger4NSC_3/C_AXI]
   connect_bd_intf_net -intf_net GPIC1_M00_AXI [get_bd_intf_pins GPIC1/M00_AXI] [get_bd_intf_pins NVMeHostController_0/s0_axi]
   connect_bd_intf_net -intf_net HPIC3_M00_AXI [get_bd_intf_pins HPIC3/M00_AXI] [get_bd_intf_pins PS/S_AXI_HP3]
   connect_bd_intf_net -intf_net NVMeHostController_0_m0_axi [get_bd_intf_pins HPIC3/S00_AXI] [get_bd_intf_pins NVMeHostController_0/m0_axi]
+  connect_bd_intf_net -intf_net NVMeHostController_0_m1_axi [get_bd_intf_pins GPIC0/S01_AXI] [get_bd_intf_pins NVMeHostController_0/m1_axi]
   connect_bd_intf_net -intf_net PS_M_AXI_GP0 [get_bd_intf_pins GPIC0/S00_AXI] [get_bd_intf_pins PS/M_AXI_GP0]
   connect_bd_intf_net -intf_net S00_AXI_2 [get_bd_intf_pins GPIC1/S00_AXI] [get_bd_intf_pins PS/M_AXI_GP1]
   connect_bd_intf_net -intf_net S01_AXI_1 [get_bd_intf_pins Tiger4NSC_1/D_AXI] [get_bd_intf_pins axi_interconnect_0/S01_AXI]
+  connect_bd_intf_net -intf_net S02_AXI_1 [get_bd_intf_pins Tiger4NSC_2/D_AXI] [get_bd_intf_pins axi_interconnect_0/S02_AXI]
+  connect_bd_intf_net -intf_net S03_AXI_1 [get_bd_intf_pins Tiger4NSC_3/D_AXI] [get_bd_intf_pins axi_interconnect_0/S03_AXI]
   connect_bd_intf_net -intf_net Tiger4NSC_0_D_AXI [get_bd_intf_pins Tiger4NSC_0/D_AXI] [get_bd_intf_pins axi_interconnect_0/S00_AXI]
   connect_bd_intf_net -intf_net Tiger4NSC_0_NFCInterface [get_bd_intf_pins Tiger4NSC_0/NFCInterface] [get_bd_intf_pins V2NFC100DDR_0/NFCInterface]
   connect_bd_intf_net -intf_net Tiger4NSC_0_SharedKESInterface [get_bd_intf_pins Tiger4NSC_0/SharedKESInterface] [get_bd_intf_pins Tiger4SharedKES_0/SharedKESInterface_CH0]
@@ -314,6 +361,12 @@ CONFIG.PCW_USE_S_AXI_HP3 {1}  ] $PS
   connect_bd_intf_net -intf_net Tiger4NSC_1_NFCInterface [get_bd_intf_pins Tiger4NSC_1/NFCInterface] [get_bd_intf_pins V2NFC100DDR_1/NFCInterface]
   connect_bd_intf_net -intf_net Tiger4NSC_1_SharedKESInterface [get_bd_intf_pins Tiger4NSC_1/SharedKESInterface] [get_bd_intf_pins Tiger4SharedKES_0/SharedKESInterface_CH1]
   connect_bd_intf_net -intf_net Tiger4NSC_1_uROMInterface [get_bd_intf_pins Dispatcher_uCode_1/BRAM_PORTA] [get_bd_intf_pins Tiger4NSC_1/uROMInterface]
+  connect_bd_intf_net -intf_net Tiger4NSC_2_NFCInterface [get_bd_intf_pins Tiger4NSC_2/NFCInterface] [get_bd_intf_pins V2NFC100DDR_2/NFCInterface]
+  connect_bd_intf_net -intf_net Tiger4NSC_2_SharedKESInterface [get_bd_intf_pins Tiger4NSC_2/SharedKESInterface] [get_bd_intf_pins Tiger4SharedKES_0/SharedKESInterface_CH2]
+  connect_bd_intf_net -intf_net Tiger4NSC_2_uROMInterface [get_bd_intf_pins Dispatcher_uCode_2/BRAM_PORTA] [get_bd_intf_pins Tiger4NSC_2/uROMInterface]
+  connect_bd_intf_net -intf_net Tiger4NSC_3_NFCInterface [get_bd_intf_pins Tiger4NSC_3/NFCInterface] [get_bd_intf_pins V2NFC100DDR_3/NFCInterface]
+  connect_bd_intf_net -intf_net Tiger4NSC_3_SharedKESInterface [get_bd_intf_pins Tiger4NSC_3/SharedKESInterface] [get_bd_intf_pins Tiger4SharedKES_0/SharedKESInterface_CH3]
+  connect_bd_intf_net -intf_net Tiger4NSC_3_uROMInterface [get_bd_intf_pins Dispatcher_uCode_3/BRAM_PORTA] [get_bd_intf_pins Tiger4NSC_3/uROMInterface]
   connect_bd_intf_net -intf_net axi_interconnect_0_M00_AXI [get_bd_intf_pins PS/S_AXI_HP0] [get_bd_intf_pins axi_interconnect_0/M00_AXI]
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins PS/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins PS/FIXED_IO]
@@ -322,10 +375,12 @@ CONFIG.PCW_USE_S_AXI_HP3 {1}  ] $PS
   connect_bd_net -net ARESETN_1 [get_bd_pins GPIC0/ARESETN] [get_bd_pins proc_sys_reset_0/interconnect_aresetn]
   connect_bd_net -net ARESETN_2 [get_bd_pins HPIC3/ARESETN] [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins proc_sys_reset_3/interconnect_aresetn]
   connect_bd_net -net ARESETN_3 [get_bd_pins GPIC1/ARESETN] [get_bd_pins proc_sys_reset_2/interconnect_aresetn]
-  connect_bd_net -net CH0MMCMC1H200_clk_out1 [get_bd_pins CH0MMCMC1H200/clk_out1] [get_bd_pins V2NFC100DDR_0/iDelayRefClock] [get_bd_pins V2NFC100DDR_0/iOutputDrivingClock] [get_bd_pins V2NFC100DDR_1/iDelayRefClock] [get_bd_pins V2NFC100DDR_1/iOutputDrivingClock]
+  connect_bd_net -net CH0MMCMC1H200_clk_out1 [get_bd_pins CH0MMCMC1H200/clk_out1] [get_bd_pins V2NFC100DDR_0/iDelayRefClock] [get_bd_pins V2NFC100DDR_0/iOutputDrivingClock] [get_bd_pins V2NFC100DDR_1/iDelayRefClock] [get_bd_pins V2NFC100DDR_1/iOutputDrivingClock] [get_bd_pins V2NFC100DDR_2/iDelayRefClock] [get_bd_pins V2NFC100DDR_2/iOutputDrivingClock] [get_bd_pins V2NFC100DDR_3/iDelayRefClock] [get_bd_pins V2NFC100DDR_3/iOutputDrivingClock]
   connect_bd_net -net I_NAND_RB_1 [get_bd_ports I_NAND_CH0_RB] [get_bd_pins V2NFC100DDR_0/I_NAND_RB]
+  connect_bd_net -net I_NAND_RB_1_1 [get_bd_ports I_NAND_CH3_RB] [get_bd_pins V2NFC100DDR_3/I_NAND_RB]
   connect_bd_net -net I_NAND_RB_2 [get_bd_ports I_NAND_CH1_RB] [get_bd_pins V2NFC100DDR_1/I_NAND_RB]
-  connect_bd_net -net M00_ARESETN_1 [get_bd_pins GPIC0/M00_ARESETN] [get_bd_pins GPIC0/M01_ARESETN] [get_bd_pins GPIC0/S00_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins axi_interconnect_0/S01_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+  connect_bd_net -net I_NAND_RB_3 [get_bd_ports I_NAND_CH2_RB] [get_bd_pins V2NFC100DDR_2/I_NAND_RB]
+  connect_bd_net -net M00_ARESETN_1 [get_bd_pins GPIC0/M00_ARESETN] [get_bd_pins GPIC0/M01_ARESETN] [get_bd_pins GPIC0/M02_ARESETN] [get_bd_pins GPIC0/M03_ARESETN] [get_bd_pins GPIC0/S00_ARESETN] [get_bd_pins GPIC0/S01_ARESETN] [get_bd_pins NVMeHostController_0/m1_axi_aresetn] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins axi_interconnect_0/S01_ARESETN] [get_bd_pins axi_interconnect_0/S02_ARESETN] [get_bd_pins axi_interconnect_0/S03_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
   connect_bd_net -net M00_ARESETN_2 [get_bd_pins HPIC3/M00_ARESETN] [get_bd_pins HPIC3/S00_ARESETN] [get_bd_pins NVMeHostController_0/m0_axi_aresetn] [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins proc_sys_reset_3/peripheral_aresetn]
   connect_bd_net -net NVMeHostController_0_dev_irq_assert [get_bd_pins NVMeHostController_0/dev_irq_assert] [get_bd_pins PS/IRQ_F2P]
   connect_bd_net -net NVMeHostController_0_pcie_tx_n [get_bd_ports pcie_tx_n] [get_bd_pins NVMeHostController_0/pcie_tx_n]
@@ -336,7 +391,13 @@ CONFIG.PCW_USE_S_AXI_HP3 {1}  ] $PS
   connect_bd_net -net Net3 [get_bd_ports IO_NAND_CH1_DQS_N] [get_bd_pins V2NFC100DDR_1/IO_NAND_DQS_N]
   connect_bd_net -net Net4 [get_bd_ports IO_NAND_CH1_DQS_P] [get_bd_pins V2NFC100DDR_1/IO_NAND_DQS_P]
   connect_bd_net -net Net5 [get_bd_ports IO_NAND_CH1_DQ] [get_bd_pins V2NFC100DDR_1/IO_NAND_DQ]
-  connect_bd_net -net PS_FCLK_CLK0 [get_bd_pins CH0MMCMC1H200/clk_in1] [get_bd_pins GPIC0/ACLK] [get_bd_pins GPIC0/M00_ACLK] [get_bd_pins GPIC0/M01_ACLK] [get_bd_pins GPIC0/S00_ACLK] [get_bd_pins PS/FCLK_CLK0] [get_bd_pins PS/M_AXI_GP0_ACLK] [get_bd_pins Tiger4NSC_0/iClock] [get_bd_pins Tiger4NSC_1/iClock] [get_bd_pins Tiger4SharedKES_0/iClock] [get_bd_pins V2NFC100DDR_0/iSystemClock] [get_bd_pins V2NFC100DDR_1/iSystemClock] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins axi_interconnect_0/S01_ACLK] [get_bd_pins proc_sys_reset_0/slowest_sync_clk]
+  connect_bd_net -net Net6 [get_bd_ports IO_NAND_CH2_DQS_N] [get_bd_pins V2NFC100DDR_2/IO_NAND_DQS_N]
+  connect_bd_net -net Net7 [get_bd_ports IO_NAND_CH2_DQ] [get_bd_pins V2NFC100DDR_2/IO_NAND_DQ]
+  connect_bd_net -net Net8 [get_bd_ports IO_NAND_CH2_DQS_P] [get_bd_pins V2NFC100DDR_2/IO_NAND_DQS_P]
+  connect_bd_net -net Net9 [get_bd_ports IO_NAND_CH3_DQS_P] [get_bd_pins V2NFC100DDR_3/IO_NAND_DQS_P]
+  connect_bd_net -net Net10 [get_bd_ports IO_NAND_CH3_DQ] [get_bd_pins V2NFC100DDR_3/IO_NAND_DQ]
+  connect_bd_net -net Net11 [get_bd_ports IO_NAND_CH3_DQS_N] [get_bd_pins V2NFC100DDR_3/IO_NAND_DQS_N]
+  connect_bd_net -net PS_FCLK_CLK0 [get_bd_pins CH0MMCMC1H200/clk_in1] [get_bd_pins GPIC0/ACLK] [get_bd_pins GPIC0/M00_ACLK] [get_bd_pins GPIC0/M01_ACLK] [get_bd_pins GPIC0/M02_ACLK] [get_bd_pins GPIC0/M03_ACLK] [get_bd_pins GPIC0/S00_ACLK] [get_bd_pins GPIC0/S01_ACLK] [get_bd_pins NVMeHostController_0/m1_axi_aclk] [get_bd_pins PS/FCLK_CLK0] [get_bd_pins PS/M_AXI_GP0_ACLK] [get_bd_pins Tiger4NSC_0/iClock] [get_bd_pins Tiger4NSC_1/iClock] [get_bd_pins Tiger4NSC_2/iClock] [get_bd_pins Tiger4NSC_3/iClock] [get_bd_pins Tiger4SharedKES_0/iClock] [get_bd_pins V2NFC100DDR_0/iSystemClock] [get_bd_pins V2NFC100DDR_1/iSystemClock] [get_bd_pins V2NFC100DDR_2/iSystemClock] [get_bd_pins V2NFC100DDR_3/iSystemClock] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins axi_interconnect_0/S01_ACLK] [get_bd_pins axi_interconnect_0/S02_ACLK] [get_bd_pins axi_interconnect_0/S03_ACLK] [get_bd_pins proc_sys_reset_0/slowest_sync_clk]
   connect_bd_net -net PS_FCLK_CLK2 [get_bd_pins GPIC1/ACLK] [get_bd_pins GPIC1/M00_ACLK] [get_bd_pins GPIC1/S00_ACLK] [get_bd_pins NVMeHostController_0/s0_axi_aclk] [get_bd_pins PS/FCLK_CLK2] [get_bd_pins PS/M_AXI_GP1_ACLK] [get_bd_pins proc_sys_reset_2/slowest_sync_clk]
   connect_bd_net -net PS_FCLK_CLK3 [get_bd_pins HPIC3/ACLK] [get_bd_pins HPIC3/M00_ACLK] [get_bd_pins HPIC3/S00_ACLK] [get_bd_pins NVMeHostController_0/m0_axi_aclk] [get_bd_pins PS/FCLK_CLK3] [get_bd_pins PS/S_AXI_HP0_ACLK] [get_bd_pins PS/S_AXI_HP3_ACLK] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins proc_sys_reset_3/slowest_sync_clk]
   connect_bd_net -net PS_FCLK_RESET0_N [get_bd_pins PS/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_0/ext_reset_in]
@@ -356,21 +417,43 @@ CONFIG.PCW_USE_S_AXI_HP3 {1}  ] $PS
   connect_bd_net -net V2NFC100DDR_1_O_NAND_RE_P [get_bd_ports O_NAND_CH1_RE_P] [get_bd_pins V2NFC100DDR_1/O_NAND_RE_P]
   connect_bd_net -net V2NFC100DDR_1_O_NAND_WE [get_bd_ports O_NAND_CH1_WE] [get_bd_pins V2NFC100DDR_1/O_NAND_WE]
   connect_bd_net -net V2NFC100DDR_1_O_NAND_WP [get_bd_ports O_NAND_CH1_WP] [get_bd_pins V2NFC100DDR_1/O_NAND_WP]
+  connect_bd_net -net V2NFC100DDR_2_O_NAND_ALE [get_bd_ports O_NAND_CH2_ALE] [get_bd_pins V2NFC100DDR_2/O_NAND_ALE]
+  connect_bd_net -net V2NFC100DDR_2_O_NAND_CE [get_bd_ports O_NAND_CH2_CE] [get_bd_pins V2NFC100DDR_2/O_NAND_CE]
+  connect_bd_net -net V2NFC100DDR_2_O_NAND_CLE [get_bd_ports O_NAND_CH2_CLE] [get_bd_pins V2NFC100DDR_2/O_NAND_CLE]
+  connect_bd_net -net V2NFC100DDR_2_O_NAND_RE_N [get_bd_ports O_NAND_CH2_RE_N] [get_bd_pins V2NFC100DDR_2/O_NAND_RE_N]
+  connect_bd_net -net V2NFC100DDR_2_O_NAND_RE_P [get_bd_ports O_NAND_CH2_RE_P] [get_bd_pins V2NFC100DDR_2/O_NAND_RE_P]
+  connect_bd_net -net V2NFC100DDR_2_O_NAND_WE [get_bd_ports O_NAND_CH2_WE] [get_bd_pins V2NFC100DDR_2/O_NAND_WE]
+  connect_bd_net -net V2NFC100DDR_2_O_NAND_WP [get_bd_ports O_NAND_CH2_WP] [get_bd_pins V2NFC100DDR_2/O_NAND_WP]
+  connect_bd_net -net V2NFC100DDR_3_O_NAND_ALE [get_bd_ports O_NAND_CH3_ALE] [get_bd_pins V2NFC100DDR_3/O_NAND_ALE]
+  connect_bd_net -net V2NFC100DDR_3_O_NAND_CE [get_bd_ports O_NAND_CH3_CE] [get_bd_pins V2NFC100DDR_3/O_NAND_CE]
+  connect_bd_net -net V2NFC100DDR_3_O_NAND_CLE [get_bd_ports O_NAND_CH3_CLE] [get_bd_pins V2NFC100DDR_3/O_NAND_CLE]
+  connect_bd_net -net V2NFC100DDR_3_O_NAND_RE_N [get_bd_ports O_NAND_CH3_RE_N] [get_bd_pins V2NFC100DDR_3/O_NAND_RE_N]
+  connect_bd_net -net V2NFC100DDR_3_O_NAND_RE_P [get_bd_ports O_NAND_CH3_RE_P] [get_bd_pins V2NFC100DDR_3/O_NAND_RE_P]
+  connect_bd_net -net V2NFC100DDR_3_O_NAND_WE [get_bd_ports O_NAND_CH3_WE] [get_bd_pins V2NFC100DDR_3/O_NAND_WE]
+  connect_bd_net -net V2NFC100DDR_3_O_NAND_WP [get_bd_ports O_NAND_CH3_WP] [get_bd_pins V2NFC100DDR_3/O_NAND_WP]
   connect_bd_net -net pcie_perst_n_1 [get_bd_ports pcie_perst_n] [get_bd_pins NVMeHostController_0/pcie_perst_n]
   connect_bd_net -net pcie_ref_clk_n_1 [get_bd_ports pcie_ref_clk_n] [get_bd_pins NVMeHostController_0/pcie_ref_clk_n]
   connect_bd_net -net pcie_ref_clk_p_1 [get_bd_ports pcie_ref_clk_p] [get_bd_pins NVMeHostController_0/pcie_ref_clk_p]
   connect_bd_net -net pcie_rx_n_1 [get_bd_ports pcie_rx_n] [get_bd_pins NVMeHostController_0/pcie_rx_n]
   connect_bd_net -net pcie_rx_p_1 [get_bd_ports pcie_rx_p] [get_bd_pins NVMeHostController_0/pcie_rx_p]
-  connect_bd_net -net proc_sys_reset_0_peripheral_reset [get_bd_pins CH0MMCMC1H200/reset] [get_bd_pins Tiger4NSC_0/iReset] [get_bd_pins Tiger4NSC_1/iReset] [get_bd_pins Tiger4SharedKES_0/iReset] [get_bd_pins V2NFC100DDR_0/iReset] [get_bd_pins V2NFC100DDR_1/iReset] [get_bd_pins proc_sys_reset_0/peripheral_reset]
+  connect_bd_net -net proc_sys_reset_0_peripheral_reset [get_bd_pins CH0MMCMC1H200/reset] [get_bd_pins Tiger4NSC_0/iReset] [get_bd_pins Tiger4NSC_1/iReset] [get_bd_pins Tiger4NSC_2/iReset] [get_bd_pins Tiger4NSC_3/iReset] [get_bd_pins Tiger4SharedKES_0/iReset] [get_bd_pins V2NFC100DDR_0/iReset] [get_bd_pins V2NFC100DDR_1/iReset] [get_bd_pins V2NFC100DDR_2/iReset] [get_bd_pins V2NFC100DDR_3/iReset] [get_bd_pins proc_sys_reset_0/peripheral_reset]
   connect_bd_net -net proc_sys_reset_2_peripheral_aresetn [get_bd_pins GPIC1/M00_ARESETN] [get_bd_pins GPIC1/S00_ARESETN] [get_bd_pins NVMeHostController_0/s0_axi_aresetn] [get_bd_pins proc_sys_reset_2/peripheral_aresetn]
 
   # Create address segments
   create_bd_addr_seg -range 0x40000000 -offset 0x0 [get_bd_addr_spaces NVMeHostController_0/m0_axi] [get_bd_addr_segs PS/S_AXI_HP3/HP3_DDR_LOWOCM] SEG_PS_HP3_DDR_LOWOCM
+  create_bd_addr_seg -range 0x10000 -offset 0x43C00000 [get_bd_addr_spaces NVMeHostController_0/m1_axi] [get_bd_addr_segs Tiger4NSC_0/C_AXI/reg0] SEG_Tiger4NSC_0_reg0
+  create_bd_addr_seg -range 0x10000 -offset 0x43C10000 [get_bd_addr_spaces NVMeHostController_0/m1_axi] [get_bd_addr_segs Tiger4NSC_1/C_AXI/reg0] SEG_Tiger4NSC_1_reg0
+  create_bd_addr_seg -range 0x10000 -offset 0x43C20000 [get_bd_addr_spaces NVMeHostController_0/m1_axi] [get_bd_addr_segs Tiger4NSC_2/C_AXI/reg0] SEG_Tiger4NSC_2_reg0
+  create_bd_addr_seg -range 0x10000 -offset 0x43C30000 [get_bd_addr_spaces NVMeHostController_0/m1_axi] [get_bd_addr_segs Tiger4NSC_3/C_AXI/reg0] SEG_Tiger4NSC_3_reg0
   create_bd_addr_seg -range 0x10000 -offset 0x83C00000 [get_bd_addr_spaces PS/Data] [get_bd_addr_segs NVMeHostController_0/s0_axi/reg0] SEG_NVMeHostController_0_reg0
   create_bd_addr_seg -range 0x10000 -offset 0x43C00000 [get_bd_addr_spaces PS/Data] [get_bd_addr_segs Tiger4NSC_0/C_AXI/reg0] SEG_Tiger4NSC_0_reg0
   create_bd_addr_seg -range 0x10000 -offset 0x43C10000 [get_bd_addr_spaces PS/Data] [get_bd_addr_segs Tiger4NSC_1/C_AXI/reg0] SEG_Tiger4NSC_1_reg0
+  create_bd_addr_seg -range 0x10000 -offset 0x43C20000 [get_bd_addr_spaces PS/Data] [get_bd_addr_segs Tiger4NSC_2/C_AXI/reg0] SEG_Tiger4NSC_2_reg0
+  create_bd_addr_seg -range 0x10000 -offset 0x43C30000 [get_bd_addr_spaces PS/Data] [get_bd_addr_segs Tiger4NSC_3/C_AXI/reg0] SEG_Tiger4NSC_3_reg0
   create_bd_addr_seg -range 0x40000000 -offset 0x0 [get_bd_addr_spaces Tiger4NSC_0/D_AXI] [get_bd_addr_segs PS/S_AXI_HP0/HP0_DDR_LOWOCM] SEG_PS_HP0_DDR_LOWOCM
   create_bd_addr_seg -range 0x40000000 -offset 0x0 [get_bd_addr_spaces Tiger4NSC_1/D_AXI] [get_bd_addr_segs PS/S_AXI_HP0/HP0_DDR_LOWOCM] SEG_PS_HP0_DDR_LOWOCM
+  create_bd_addr_seg -range 0x40000000 -offset 0x0 [get_bd_addr_spaces Tiger4NSC_2/D_AXI] [get_bd_addr_segs PS/S_AXI_HP0/HP0_DDR_LOWOCM] SEG_PS_HP0_DDR_LOWOCM
+  create_bd_addr_seg -range 0x40000000 -offset 0x0 [get_bd_addr_spaces Tiger4NSC_3/D_AXI] [get_bd_addr_segs PS/S_AXI_HP0/HP0_DDR_LOWOCM] SEG_PS_HP0_DDR_LOWOCM
   
 
   # Restore current instance

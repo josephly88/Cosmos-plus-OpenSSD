@@ -1,4 +1,4 @@
-// (c) Copyright 1995-2017 Xilinx, Inc. All rights reserved.
+// (c) Copyright 1995-2026 Xilinx, Inc. All rights reserved.
 // 
 // This file contains confidential and proprietary information
 // of Xilinx, Inc. and is protected under U.S. and
@@ -48,9 +48,9 @@
 
 
 // IP VLNV: ENCLab:ip:NVMeHostController:2.0.0
-// IP Revision: 1
+// IP Revision: 3
 
-(* X_CORE_INFO = "s_axi_nvme,Vivado 2014.4.1" *)
+(* X_CORE_INFO = "s_axi_nvme,Vivado 2014.4" *)
 (* CHECK_LICENSE_TYPE = "OpenSSD2_NVMeHostController_0_0,s_axi_nvme,{}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module OpenSSD2_NVMeHostController_0_0 (
@@ -122,6 +122,53 @@ module OpenSSD2_NVMeHostController_0_0 (
   m0_axi_ruser,
   m0_axi_rvalid,
   m0_axi_rready,
+  m1_axi_aclk,
+  m1_axi_aresetn,
+  m1_axi_awid,
+  m1_axi_awaddr,
+  m1_axi_awlen,
+  m1_axi_awsize,
+  m1_axi_awburst,
+  m1_axi_awlock,
+  m1_axi_awcache,
+  m1_axi_awprot,
+  m1_axi_awregion,
+  m1_axi_awqos,
+  m1_axi_awuser,
+  m1_axi_awvalid,
+  m1_axi_awready,
+  m1_axi_wid,
+  m1_axi_wdata,
+  m1_axi_wstrb,
+  m1_axi_wlast,
+  m1_axi_wuser,
+  m1_axi_wvalid,
+  m1_axi_wready,
+  m1_axi_bid,
+  m1_axi_bresp,
+  m1_axi_bvalid,
+  m1_axi_buser,
+  m1_axi_bready,
+  m1_axi_arid,
+  m1_axi_araddr,
+  m1_axi_arlen,
+  m1_axi_arsize,
+  m1_axi_arburst,
+  m1_axi_arlock,
+  m1_axi_arcache,
+  m1_axi_arprot,
+  m1_axi_arregion,
+  m1_axi_arqos,
+  m1_axi_aruser,
+  m1_axi_arvalid,
+  m1_axi_arready,
+  m1_axi_rid,
+  m1_axi_rdata,
+  m1_axi_rresp,
+  m1_axi_rlast,
+  m1_axi_ruser,
+  m1_axi_rvalid,
+  m1_axi_rready,
   dev_irq_assert,
   pcie_ref_clk_p,
   pcie_ref_clk_n,
@@ -268,6 +315,100 @@ input wire [0 : 0] m0_axi_ruser;
 input wire m0_axi_rvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m0_axi RREADY" *)
 output wire m0_axi_rready;
+(* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 m1_axi_signal_clock CLK" *)
+input wire m1_axi_aclk;
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 m1_axi_signal_reset RST" *)
+input wire m1_axi_aresetn;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi AWID" *)
+output wire [0 : 0] m1_axi_awid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi AWADDR" *)
+output wire [31 : 0] m1_axi_awaddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi AWLEN" *)
+output wire [7 : 0] m1_axi_awlen;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi AWSIZE" *)
+output wire [2 : 0] m1_axi_awsize;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi AWBURST" *)
+output wire [1 : 0] m1_axi_awburst;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi AWLOCK" *)
+output wire m1_axi_awlock;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi AWCACHE" *)
+output wire [3 : 0] m1_axi_awcache;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi AWPROT" *)
+output wire [2 : 0] m1_axi_awprot;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi AWREGION" *)
+output wire [3 : 0] m1_axi_awregion;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi AWQOS" *)
+output wire [3 : 0] m1_axi_awqos;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi AWUSER" *)
+output wire [0 : 0] m1_axi_awuser;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi AWVALID" *)
+output wire m1_axi_awvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi AWREADY" *)
+input wire m1_axi_awready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi WID" *)
+output wire [0 : 0] m1_axi_wid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi WDATA" *)
+output wire [63 : 0] m1_axi_wdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi WSTRB" *)
+output wire [7 : 0] m1_axi_wstrb;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi WLAST" *)
+output wire m1_axi_wlast;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi WUSER" *)
+output wire [0 : 0] m1_axi_wuser;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi WVALID" *)
+output wire m1_axi_wvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi WREADY" *)
+input wire m1_axi_wready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi BID" *)
+input wire [0 : 0] m1_axi_bid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi BRESP" *)
+input wire [1 : 0] m1_axi_bresp;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi BVALID" *)
+input wire m1_axi_bvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi BUSER" *)
+input wire [0 : 0] m1_axi_buser;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi BREADY" *)
+output wire m1_axi_bready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi ARID" *)
+output wire [0 : 0] m1_axi_arid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi ARADDR" *)
+output wire [31 : 0] m1_axi_araddr;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi ARLEN" *)
+output wire [7 : 0] m1_axi_arlen;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi ARSIZE" *)
+output wire [2 : 0] m1_axi_arsize;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi ARBURST" *)
+output wire [1 : 0] m1_axi_arburst;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi ARLOCK" *)
+output wire m1_axi_arlock;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi ARCACHE" *)
+output wire [3 : 0] m1_axi_arcache;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi ARPROT" *)
+output wire [2 : 0] m1_axi_arprot;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi ARREGION" *)
+output wire [3 : 0] m1_axi_arregion;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi ARQOS" *)
+output wire [3 : 0] m1_axi_arqos;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi ARUSER" *)
+output wire [0 : 0] m1_axi_aruser;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi ARVALID" *)
+output wire m1_axi_arvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi ARREADY" *)
+input wire m1_axi_arready;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi RID" *)
+input wire [0 : 0] m1_axi_rid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi RDATA" *)
+input wire [63 : 0] m1_axi_rdata;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi RRESP" *)
+input wire [1 : 0] m1_axi_rresp;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi RLAST" *)
+input wire m1_axi_rlast;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi RUSER" *)
+input wire [0 : 0] m1_axi_ruser;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi RVALID" *)
+input wire m1_axi_rvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 m1_axi RREADY" *)
+output wire m1_axi_rready;
 output wire dev_irq_assert;
 input wire pcie_ref_clk_p;
 input wire pcie_ref_clk_n;
@@ -289,7 +430,16 @@ input wire [7 : 0] pcie_rx_n;
     .C_M0_AXI_WUSER_WIDTH(1),
     .C_M0_AXI_BUSER_WIDTH(1),
     .C_M0_AXI_ARUSER_WIDTH(1),
-    .C_M0_AXI_RUSER_WIDTH(1)
+    .C_M0_AXI_RUSER_WIDTH(1),
+    .C_M1_AXI_ADDR_WIDTH(32),
+    .C_M1_AXI_DATA_WIDTH(64),
+    .C_M1_AXI_ID_WIDTH(1),
+    .C_M1_AXI_AWUSER_WIDTH(1),
+    .C_M1_AXI_WUSER_WIDTH(1),
+    .C_M1_AXI_BUSER_WIDTH(1),
+    .C_M1_AXI_ARUSER_WIDTH(1),
+    .C_M1_AXI_RUSER_WIDTH(1),
+    .C_M1_AXI_BASSADDR(32'H20000000)
   ) inst (
     .s0_axi_aclk(s0_axi_aclk),
     .s0_axi_aresetn(s0_axi_aresetn),
@@ -359,6 +509,53 @@ input wire [7 : 0] pcie_rx_n;
     .m0_axi_ruser(m0_axi_ruser),
     .m0_axi_rvalid(m0_axi_rvalid),
     .m0_axi_rready(m0_axi_rready),
+    .m1_axi_aclk(m1_axi_aclk),
+    .m1_axi_aresetn(m1_axi_aresetn),
+    .m1_axi_awid(m1_axi_awid),
+    .m1_axi_awaddr(m1_axi_awaddr),
+    .m1_axi_awlen(m1_axi_awlen),
+    .m1_axi_awsize(m1_axi_awsize),
+    .m1_axi_awburst(m1_axi_awburst),
+    .m1_axi_awlock(m1_axi_awlock),
+    .m1_axi_awcache(m1_axi_awcache),
+    .m1_axi_awprot(m1_axi_awprot),
+    .m1_axi_awregion(m1_axi_awregion),
+    .m1_axi_awqos(m1_axi_awqos),
+    .m1_axi_awuser(m1_axi_awuser),
+    .m1_axi_awvalid(m1_axi_awvalid),
+    .m1_axi_awready(m1_axi_awready),
+    .m1_axi_wid(m1_axi_wid),
+    .m1_axi_wdata(m1_axi_wdata),
+    .m1_axi_wstrb(m1_axi_wstrb),
+    .m1_axi_wlast(m1_axi_wlast),
+    .m1_axi_wuser(m1_axi_wuser),
+    .m1_axi_wvalid(m1_axi_wvalid),
+    .m1_axi_wready(m1_axi_wready),
+    .m1_axi_bid(m1_axi_bid),
+    .m1_axi_bresp(m1_axi_bresp),
+    .m1_axi_bvalid(m1_axi_bvalid),
+    .m1_axi_buser(m1_axi_buser),
+    .m1_axi_bready(m1_axi_bready),
+    .m1_axi_arid(m1_axi_arid),
+    .m1_axi_araddr(m1_axi_araddr),
+    .m1_axi_arlen(m1_axi_arlen),
+    .m1_axi_arsize(m1_axi_arsize),
+    .m1_axi_arburst(m1_axi_arburst),
+    .m1_axi_arlock(m1_axi_arlock),
+    .m1_axi_arcache(m1_axi_arcache),
+    .m1_axi_arprot(m1_axi_arprot),
+    .m1_axi_arregion(m1_axi_arregion),
+    .m1_axi_arqos(m1_axi_arqos),
+    .m1_axi_aruser(m1_axi_aruser),
+    .m1_axi_arvalid(m1_axi_arvalid),
+    .m1_axi_arready(m1_axi_arready),
+    .m1_axi_rid(m1_axi_rid),
+    .m1_axi_rdata(m1_axi_rdata),
+    .m1_axi_rresp(m1_axi_rresp),
+    .m1_axi_rlast(m1_axi_rlast),
+    .m1_axi_ruser(m1_axi_ruser),
+    .m1_axi_rvalid(m1_axi_rvalid),
+    .m1_axi_rready(m1_axi_rready),
     .dev_irq_assert(dev_irq_assert),
     .pcie_ref_clk_p(pcie_ref_clk_p),
     .pcie_ref_clk_n(pcie_ref_clk_n),

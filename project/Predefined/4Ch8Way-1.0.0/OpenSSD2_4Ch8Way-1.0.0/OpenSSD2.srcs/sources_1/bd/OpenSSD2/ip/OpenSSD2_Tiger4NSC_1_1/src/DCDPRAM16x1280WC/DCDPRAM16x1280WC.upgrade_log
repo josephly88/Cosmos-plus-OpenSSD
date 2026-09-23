@@ -1,0 +1,31 @@
+Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2014.4 (win64) Build 1071353 Tue Nov 18 18:29:27 MST 2014
+| Date         : Wed Sep 23 21:47:52 2026
+| Host         : PC89136 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z045ffg900-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'DCDPRAM16x1280WC'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of DCDPRAM16x1280WC (xilinx.com:ip:blk_mem_gen:8.2) from (Rev. 4) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading IP 'DCDPRAM16x1280WC'. These changes may impact your design.
+
+
+-upgraded port 'addra' width 11 differs from original width 4
+-upgrade has removed port 'douta'
+-upgrade has added port 'addrb'
+-upgrade has added port 'clkb'
+-upgrade has added port 'doutb'
+-upgrade has added port 'enb'
+
